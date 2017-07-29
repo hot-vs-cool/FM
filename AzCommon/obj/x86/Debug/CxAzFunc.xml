@@ -1,0 +1,3470 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CxAzFunc
+</name>
+</assembly>
+<members>
+<member name="F:CxAzFunc.FunctionTag.DrawingInto">
+	<summary>
+ CAD图纸导入
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.RecognizeDevice">
+	<summary>
+ 设备识别
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.ComponentPropertyEdit">
+	<summary>
+ 属性编辑
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.FunctionTag.ComponentDelete">
+	<summary>
+ 构件删除
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.ShowDrawingAlong">
+	<summary>
+ 图纸局部独显
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.SetComponentMultiple">
+	<summary>
+ 构件套数设置
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.CorrectBasePt">
+	<summary>
+ 图块基点修正
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.ComponentDefine">
+	<summary>
+ 构件定义
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.SetElecCircuit">
+	<summary>
+ 设置电气专业回路信息
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.CreateJunctionBox">
+	<summary>
+ 自动接线盒
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.DrawElecCircuit">
+	<summary>
+ 电气工程回路绘制
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.DrawElecBridge">
+	<summary>
+ 电气工程桥架绘制
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.DrawThunderComponent">
+	<summary>
+ 防雷接地设备绘制
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.SetPlumbingSystem">
+	<summary>
+ 水暖工程系统设置
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.DrawPlumbingPipe">
+	<summary>
+ 水暖工程管道绘制
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.PickPlumbingPipe">
+	<summary>
+ 水暖工程管道拾取
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.RecoSprinkler">
+	<summary>
+ 水暖工程喷淋头识别
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.RecoSprinklerPipe">
+	<summary>
+ 水暖工程喷淋管识别
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.SetHVACSystem">
+	<summary>
+ 设置通风空调系统
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.DrawAirDuct">
+	<summary>
+ 风管绘制
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.DrawAirConditionPipe">
+	<summary>
+ 空调水管道绘制
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.PickAirConditionPipe">
+	<summary>
+ 空调水管道拾取
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.DrawAirDuctFitting">
+	<summary>
+ 风管配件布置
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.SetLayerUnVisible">
+	<summary>
+ 设置指定图层的不可见
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.SetOtherLayerUnVisisble">
+	<summary>
+ 设置处指定图层外其它图层的不可见
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.SetAllLayerVisible">
+	<summary>
+ 设置所有图层的可见
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.SetCptLayerVisible">
+	<summary>
+ 设置构件图层的可见性
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.DoEmptyCommand">
+	<summary>
+ 执行空命令
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.FunctionTest1">
+	<summary>
+ 内部测试功能模块1
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.FunctionTest2">
+	<summary>
+ 内部测试功能模块2
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.DoSystemCommand">
+	<summary>
+ 执行系统内置命令
+ </summary>
+</member><member name="F:CxAzFunc.FunctionTag.ExitApplication">
+	<summary>
+ 退出主程序
+ </summary>
+</member><member name="T:CxAzFunc.FunctionTag">
+	<summary>
+ 主界面功能标记和命令ID枚举
+ </summary>
+</member><member name="T:CxAzFunc.Province">
+	<summary>
+ 中国省份地区枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.YesNoEnum">
+	<summary>
+ 布尔是否枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.AzSpecialityCategory">
+	<summary>
+ 安装专业类别枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.AzSpecialityType">
+	<summary>
+ 安装全部专业类型枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.AzSystemType">
+	<summary>
+ 安装全部系统类型ID枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.ElectricalSpeciality">
+	<summary>
+ 电气工程专业枚举
+ </summary>
+</member><member name="T:CxAzFunc.WaterSpeciality">
+	<summary>
+ 水暖工程专业枚举
+ </summary>
+</member><member name="T:CxAzFunc.HVACSpeciality">
+	<summary>
+ 通风空调专业枚举
+ </summary>
+</member><member name="T:CxAzFunc.ElectricalSystem">
+	<summary>
+ 电气工程系统枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.WaterSystem">
+	<summary>
+ 水暖工程系统枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.HVACSystem">
+	<summary>
+ 通风空调工程系统枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicConstruct.CloneEntity(System.Object,System.Object@)">
+	<summary>
+ 完全克隆一个实体对象 ，不支持的对象返回nothing
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicConstruct.ConstructPsByLine(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Double)">
+	<summary>
+ 构造点集合对象
+ </summary>
+	<param name="pt1"></param>
+	<param name="pt2"></param>
+	<param name="offer"></param>
+	<returns></returns>
+</member><member name="M:CxAzFunc.Graphic.GraphicConstruct.ConstructText(MxDrawXLib.MxDrawText)">
+	<summary>
+ 构造CAD字体对象
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicConstruct.ConstructPoint(System.Double,System.Double,System.Double)">
+	<summary>
+ 构造CAD点对象
+ </summary>
+	<param name="xCoordinate">X坐标值</param>
+	<param name="yCoordinate">Y坐标值</param>
+	<param name="zCoordinate">可选,Z坐标值默认为0</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicConstruct.ConstructLine(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 通过两点构造线段实体对象
+ </summary>
+	<param name="startPoint">线段起点</param>
+	<param name="endPoint">线段端点</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicConstruct.ConstructLine(System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ 通过xy构造线段实体对象
+ </summary>
+	<param name="x1"></param>
+	<param name="y1"></param>
+	<param name="x2"></param>
+	<param name="y2"></param>
+	<returns></returns>
+</member><member name="M:CxAzFunc.Graphic.GraphicConstruct.ConstructCircle(MxDrawXLib.MxDrawPoint,System.Double)">
+	<summary>
+ 通过圆心和半径构造CAD实体对象
+ </summary>
+	<param name="centerPoint">圆心坐标点</param>
+	<param name="radius">半径值</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicConstruct.ConstructArc(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 通过圆弧上的三点构造一个圆弧对象,如果三点共线则返回Nothing
+ </summary>
+	<param name="startPoint">圆弧起点</param>
+	<param name="internalPoint">圆弧上任意点</param>
+	<param name="endPoint">圆弧端点</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicConstruct.DefineBlockObj(MxDrawXLib.MxDrawEntity[],MxDrawXLib.MxDrawPoint,System.String)">
+	<summary>
+ 块对象定义,如果成功则返回定义的块表记录,否则返回Nothing
+ </summary>
+	<param name="entityObjs">构成块的对象实体</param>
+	<param name="originPt">可选,定义的块插入点,默认采用块外包矩形中心点作为插入点</param>
+	<param name="blockName">可选,定义的块名称,如果为空或已存在同名块,则定义匿名块</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicConstruct.ConstructBlockReference(MxDrawXLib.MxDrawEntity[],MxDrawXLib.MxDrawPoint,System.String)">
+	<summary>
+ 将多个CAD实体对象打包成块,如果打包失败则返回Nothing
+ </summary>
+	<param name="entityObjs">构成块的实体对象</param>
+	<param name="originPt">指定的块插入基点</param>
+	<param name="blockName">可选,块名称,如果已存在同名块,则采用匿名块名,默认定义匿名块</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicConstruct.ConstructMultiline(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.UInt16,System.Double,System.Boolean)">
+	<summary>
+ 构造CAD多线对象,如果构造失败则返回Nothing
+ </summary>
+	<param name="startPoint">多线起点</param>
+	<param name="endPoint">多线终点</param>
+	<param name="lineCount">多线数目</param>
+	<param name="offsetValue">多线偏移量</param>
+	<param name="isClose">可选,指示多线是否闭合,默认不闭合</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Graphic.GraphicConstruct">
+	<summary>
+ CAD基础图元构造类
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.frmSetProperty.FloorHeight">
+	<summary>
+ 当前楼层层高值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.frmSetProperty.KindProjId">
+	<summary>
+ 当前分项工程所属ID值
+ </summary>
+</member><member name="P:CxAzFunc.frmSetProperty.AzCptObj">
+	<summary>
+ 当前点类型构件对象
+ </summary>
+</member><member name="P:CxAzFunc.frmSetProperty.BlockObj">
+	<summary>
+ 当前CAD块实体实体对象
+ </summary>
+</member><member name="P:CxAzFunc.frmSetProperty.BlockName">
+	<summary>
+ 当前图块名称
+ </summary>
+</member><member name="P:CxAzFunc.frmSetProperty.SpecialityCategory">
+	<summary>
+ 调用该窗体时的专业类别
+ </summary>
+	<value></value>
+</member><member name="P:CxAzFunc.frmSetProperty.ComponentName">
+	<summary>
+ 指示与构件关联的名称标识文本
+ </summary>
+</member><member name="P:CxAzFunc.frmSetProperty.FormCloseReason">
+	<summary>
+ 当前窗体关闭原因枚举
+ </summary>
+</member><member name="F:CxAzFunc.frmSetProperty.CloseReason.None">
+	<summary>
+ 无状态
+ </summary>
+</member><member name="F:CxAzFunc.frmSetProperty.CloseReason.DefintOK">
+	<summary>
+ 构件定义成功
+ </summary>
+</member><member name="F:CxAzFunc.frmSetProperty.CloseReason.ExtractName">
+	<summary>
+ 名称提取
+ </summary>
+</member><member name="F:CxAzFunc.frmSetProperty.CloseReason.Cancel">
+	<summary>
+ 用户取消操作
+ </summary>
+</member><member name="T:CxAzFunc.frmSetProperty.CloseReason">
+	<summary>
+ 窗体关闭原因枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.frmSetProperty.MatchCpt(System.String,System.String@)">
+	<summary>
+ 通过构件名称匹配构件类型实例
+ </summary>
+	<param name="componentName">构件名称</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.ComponentProperty.GetCptClassList">
+	<summary>
+ 获取安装工程所有构件类型目录，并按所属构件分组分类
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.ComponentProperty.GetCptClassListByGroup(CxAzFunc.Component.AzComponentGroup)">
+	<summary>
+ 获取指定分组的构件类型目录
+ </summary>
+	<param name="componentGroup">待获取的分组类型</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.ComponentProperty.GetDefautCptProperty(CxAzFunc.Component.AzComponentType)">
+	<summary>
+ 获取指定类型的构件默认属性集
+ </summary>
+	<param name="componentType">待获取属性的构件类型</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.ComponentProperty.GetDefautCptProperty(System.String)">
+	<summary>
+ 获取指定类型的构件默认属性集,如果不存在指定类型的构件属性则返回Nothing
+ </summary>
+	<param name="componentType">待获取属性的构件类型</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.ComponentProperty.GetComponentProperty(System.Int32)">
+	<summary>
+ 获取制定记录ID的构件属性到集合，如果数据库不存在构件属性则返回Nothing
+ </summary>
+	<param name="recPropertyId">与构件关联的属性记录ID值</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.ComponentProperty.GetAllComponentProperty(System.Collections.Generic.Dictionary{System.Int32,System.Int32[]}@)">
+	<summary>
+ 获取当前工程项目所有已实例化构件属性集合
+ </summary>
+	<param name="dicSubIdMapping">返回的主哈希和次哈希映射集合,不包含不存在次哈希的构件哈希映射,如果次哈希不存在则以0占位</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.ComponentProperty.GetSubComponentProperty(System.Collections.Generic.Dictionary{System.String,System.String},System.Int32@)">
+	<summary>
+ 获取构件子构件属性集和对应的哈希值,返回值共3个,如果对应位置处不存在子构件则为Nothing
+ </summary>
+	<param name="dicMainProperty">主构件属性集</param>
+	<param name="mainHashCode">可选,返回的主构件属性哈希值</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.ComponentProperty.WriteComponentPropertyToDb(System.Int32,System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Int32,System.Int32)">
+	<summary>
+ 写入构件属性到数据库
+ </summary>
+	<param name="recPropertyId">属性集合对应的ID,即哈希值</param>
+	<param name="dicProperty">待写入的属性集合</param>
+	<param name="subHash1">可选,子哈希值1,默认为0即不存在子哈希</param>
+	<param name="subHash2">可选,子哈希值2,默认为0即不存在子哈希</param>
+	<param name="subHash3">可选,子哈希值3,默认为0即不存在子哈希</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.ComponentProperty">
+	<summary>
+ 构件属性操作类
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.Dqfj.接线盒.JunctionBoxMaterial">
+	<summary>
+ 接线盒材质类型
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.Dqfj.接线盒.JunctionBoxType">
+	<summary>
+ 接线盒类型
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Dqfj.接线盒.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.接线盒.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.接线盒.Type">
+	<summary>
+ 接线盒的类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.接线盒.Material">
+	<summary>
+ 指示组成构件的材料类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.电缆头.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.电缆头.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.电缆头.Material">
+	<summary>
+ 电缆头材质信息
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.电缆头.SectionArea">
+	<summary>
+ 电缆头截面面积,单位:㎜²
+ </summary>
+</member><member name="T:CxAzFunc.Component.Dqfj.套管.SleeveCategory">
+	<summary>
+ 套管类别枚举
+ </summary>
+</member><member name="T:CxAzFunc.Component.Dqfj.套管.SleeveLocation">
+	<summary>
+ 套管安装位置
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.套管.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.套管.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.套管.Material">
+	<summary>
+ 指示组成构件的材料类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.套管.Diameter">
+	<summary>
+ 公称直径,单位：mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.套管.Category">
+	<summary>
+ 套管类型,分为刚性和普通
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqfj.套管.Loaction">
+	<summary>
+ 套管安装位置
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.避雷针.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.避雷针.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.避雷针.Material">
+	<summary>
+ 配线材质信息
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.避雷针.Loaction">
+	<summary>
+ 安装位置，一般取烟囱、平屋面、墙、金属容器顶部、构筑物
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.等电位连接.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.等电位连接.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.等电位连接.Material">
+	<summary>
+ 配线材质信息
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.接地极.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.接地极.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.接地极.Material">
+	<summary>
+ 配线材质信息
+ </summary>
+</member><member name="T:CxAzFunc.FljdsbGroup.焊接点.WeldPointLocation">
+	<summary>
+ 焊接点安装位置类型
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.FljdsbGroup.焊接点.Name">
+	<summary>
+ 构件名称
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.焊接点.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.焊接点.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.焊接点.Location">
+	<summary>
+ 配线材质信息
+ </summary>
+</member><member name="T:CxAzFunc.FljdsbGroup.等电位箱.MEPInstallType">
+	<summary>
+ 等电位箱安装方式
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.FljdsbGroup.等电位箱.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.等电位箱.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.等电位箱.InstallType">
+	<summary>
+ 等电位箱安装方式
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.避雷网接地测试点.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.避雷网接地测试点.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.避雷网接地测试点.Material">
+	<summary>
+ 配线材质信息
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.接地跨接线.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.接地跨接线.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.FljdsbGroup.接地跨接线.Material">
+	<summary>
+ 配线材质信息
+ </summary>
+</member><member name="M:CxAzFunc.GeometryMath.CalcDistance(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Boolean)">
+	<summary>
+ 计算空间两点之间的距离，返回距离数值
+ </summary>
+	<param name="startPoint">计算起点</param>
+	<param name="endPoint">计算终点</param>
+	<param name="isCalaZ">可选，是否计算Z坐标，默认不计算</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.AngleToRadian(System.Double)">
+	<summary>
+ 将指定角度值转换成弧度，返回转换后的弧度值
+ </summary>
+	<param name="angleValue">角度值</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.RadianToAngle(System.Double)">
+	<summary>
+ 将指定弧度值转换成角度，返回转换后的角度值
+ </summary>
+	<param name="radianValue">弧度值</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.GetAngle(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Boolean)">
+	<summary>
+ 获取由指定起点和终点的线段与X轴的夹角值
+ </summary>
+	<param name="startPoint">计算线段起点</param>
+	<param name="endPoint">计算线段终点</param>
+	<param name="isRadian">可选，指示返回值的表示类型，值为"True"表示以弧度制表示，反之为角度制</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.GetMinAngleToXAxis(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Boolean)">
+	<summary>
+ 获取指定起点和终点的线段在XY平面内与X轴的最小夹角,角度在±1°或360°±1°都返回为0°
+ </summary>
+	<param name="startPoint">计算线段起点</param>
+	<param name="endPoint">计算线段终点</param>
+	<param name="isRadian">可选，指示返回值的表示类型，值为"True"表示以弧度制表示，反之为角度制</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.GetExtendPoint(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Double)">
+	<summary>
+ 获取指定延长值和指定方向末端的延长点
+ </summary>
+	<param name="startPoint">延长方向起点</param>
+	<param name="endPoint">延长方向终点</param>
+	<param name="extendValue">延长值</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.GetExtendPoint(MxDrawXLib.MxDrawPoint,System.Double,System.Double)">
+	<summary>
+ 沿指定角度对指定基点偏移指定距离，返回偏移后的点坐标
+ </summary>
+	<param name="basePoint">偏移基点</param>
+	<param name="extendAngle">偏移角度,采用弧度制</param>
+	<param name="extendValue">延长值</param>
+	<returns></returns>
+	<remarks>当传入角度大于2*PI时，系统会自动进行换算至2*PI以内</remarks>
+</member><member name="M:CxAzFunc.GeometryMath.GetPedalPoint(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ 获取直线外一点到到直线上的最近点(垂足)坐标
+ </summary>
+	<param name="xSorce">待求点X坐标值</param>
+	<param name="ySorce">待求点Y坐标值</param>
+	<param name="xLinePt1">直线起点X坐标值</param>
+	<param name="yLinePt1">直线起点Y坐标值</param>
+	<param name="xLinePt2">直线终点X坐标值</param>
+	<param name="yLinePt2">直线终点Y坐标值</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.GetPedalPoint(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 获取直线外一点到到直线上的最近点(垂足)坐标
+ </summary>
+	<param name="sourcePt">直线外点</param>
+	<param name="linePt1">直线起点</param>
+	<param name="linePt2">直线终点</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.GetTwoLineIntersecPt(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 获取两直线的交点,返回的交点包含非实交的情况,如果不存在交点则返回Nothing
+ </summary>
+	<param name="line1pt1">直线1起点</param>
+	<param name="line1pt2">直线1终点</param>
+	<param name="line2pt1">直线2起点</param>
+	<param name="line2pt2">直线2终点</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.IsSamePoint(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Double)">
+	<summary>
+ 通过指点精确度判断两点是否为同一点
+ </summary>
+	<param name="point1">点1</param>
+	<param name="point2">点2</param>
+	<param name="accuracyValue">可选，误差控制值，默认为1</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.IsPointOnLine(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Boolean,System.Boolean)">
+	<summary>
+ 判断点是否在线上,返回值True表示点在线上,反之点不在线上，点到线的距离偏差控制值为±2mm
+ </summary>
+	<param name="sorcePoint">目标点</param>
+	<param name="lineStartPoint">线段起点</param>
+	<param name="lineEndPoint">线段端点</param>
+	<param name="isRealIntersect">指示是否是需要实相交,值为"True"则点在线延长线上也返回"False"</param>
+	<param name="isCalcZ">可选,指示是否需要考虑Z坐标影响</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.IsPointOnRectangle(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 判断点是否在指定的正交矩形区域内;返回值“True”在举行内，否则
+ </summary>
+	<param name="sorcePt">待判断的目标点</param>
+	<param name="leftDownPt">矩形区域左下角坐标点</param>
+	<param name="rightUpPt">矩形区域右上角坐标点</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.IsParallel(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Boolean)">
+	<summary>
+ 判断两直线是否平行;返回值True表示平行,反之不平行
+ </summary>
+	<param name="lineStartPoint1">直线1起点</param>
+	<param name="lineEndPoint1">直线1终点</param>
+	<param name="lineStartPoint2">直线2起点</param>
+	<param name="lineEndPoint2">直线2终点</param>
+	<param name="isCalcZ">可选,指示是否考虑Z坐标影响,默认不考虑</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.IsTwoLineCollinear(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Boolean)">
+	<summary>
+ 判断两直线是否共线;返回值"True"表示共线,反之不共线
+ </summary>
+	<param name="lineStartPoint1">直线1起点</param>
+	<param name="lineEndPoint1">直线1终点</param>
+	<param name="lineStartPoint2">直线2起点</param>
+	<param name="lineEndPoint2">直线2终点</param>
+	<param name="isCalcZ">可选,指示是否考虑Z坐标影响,默认不考虑</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.IsTwoRectangleIntersect(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 判断XY平面两矩形是否相交(含包含情况);返回值"True"表示相交,反之不相交
+ </summary>
+	<param name="minPt1">矩形1的左下角角点</param>
+	<param name="maxPt1">矩形1的右上角角点</param>
+	<param name="minPt2">矩形2的左下角角点</param>
+	<param name="maxPt2">矩形2的右上角角点</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.GeometryMath.RotatePoint(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Double)">
+	<summary>
+ 按指定基点将指定点旋转指定角度,返回旋转后的点
+ </summary>
+	<param name="basePoint">选择基点</param>
+	<param name="sourcePoint">待选择点</param>
+	<param name="rotateAngle">旋转角度,以弧度表示</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.GeometryMath">
+	<summary>
+ 几何数学类，如平行、相交、共线、角度等计算
+ </summary>
+</member><member name="M:CxAzFunc.Component.EditComponent.GetCptDefaultProperty(CxAzFunc.Component.AzComponentType)">
+	<summary>
+ 获取构件默认属性集合
+ </summary>
+	<param name="componentType">待获取默认属性的构件类型</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.EditComponent">
+	<summary>
+ 构件编辑类，包括构件属性查询、修改
+ </summary>
+</member><member name="F:CxAzFunc.MxCadEvent.lblTooltip">
+	<summary>
+ CAD界面随光标移动的提示标签
+ </summary>
+</member><member name="F:CxAzFunc.MxCadEvent._commandTipMsg">
+	<summary>
+ 动态提示中CAD命令提示内容部分
+ </summary>
+</member><member name="F:CxAzFunc.MxCadEvent._sysInfoTipMsg">
+	<summary>
+ 动态提示中系统信息提示内容部分
+ </summary>
+</member><member name="F:CxAzFunc.MxCadEvent._lastCommandId">
+	<summary>
+ 上一次执行的命令ID值
+ </summary>
+</member><member name="P:CxAzFunc.MxCadEvent.mainForm">
+	<summary>
+ 应用程序主窗体
+ </summary>
+</member><member name="F:CxAzFunc.MxCadEvent.mxCadObj">
+	<summary>
+ 事件关联的CAD对象
+ </summary>
+</member><member name="P:CxAzFunc.MxCadEvent.CommandTipMsg">
+	<summary>
+ 获取或设置CAD界面随光标移动的提示标签的内容,该内容为CAD命令提示部分
+ </summary>
+</member><member name="P:CxAzFunc.MxCadEvent.SysInfoTipMsg">
+	<summary>
+ 获取或设置CAD界面随光标移动的提示标签的内容,该内容为系统信息部分
+ </summary>
+</member><member name="P:CxAzFunc.MxCadEvent.IsUseToolTip">
+	<summary>
+ 指示是否启用随光标移动的标签提示;"True"为启用,"False"不启用
+ </summary>
+	<remarks>当标签内容不为空时，该属性值设置为"True"才会生效</remarks>
+</member><member name="P:CxAzFunc.MxCadEvent.LastCommandId">
+	<summary>
+ 上一次执行命令的ID值,值为-1表示未执行任何命令
+ </summary>
+</member><member name="M:CxAzFunc.MxCadEvent.#ctor">
+	<summary>
+ 本过程包含初始化CAD截面随光标移动的标签控件
+ </summary>
+</member><member name="M:CxAzFunc.MxCadEvent.Init">
+	<summary>
+ 对象初始化，一般用于功能模块开始启用前对操作界面进行初始化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent.SetEventoObjAndMainForm(System.Windows.Forms.Form@,AxMxDrawXLib.AxMxDrawX@)">
+	<summary>
+ 设置与事件关联的CAD和应用程序主窗体,该方法一般由CAD控件事件中间件对象调用
+ </summary>
+	<param name="frmMain">应用程序主窗体</param>
+	<param name="mxCadObj">与事件关联的CAD对象</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent.SetLastCommandId(System.Int16)">
+	<summary>
+ 设置CAD事件处理对象最近一次的执行的命令ID值,该方法一般由CAD控件事件中间件对象调用
+ </summary>
+	<param name="commandId">最近一次的命令ID值</param>
+</member><member name="M:CxAzFunc.MxCadEvent.MoveToolTip(System.Double,System.Double)">
+	<summary>
+ 移动动态提示标签到指定位置,该方法一般由CAD控件事件中间件对象调用
+ </summary>
+	<param name="dx">动态提示框左上角X坐标值,一般取绘图区域光标位置X坐标值</param>
+	<param name="dy">动态提示框左上角Y坐标值,一般取绘图区域光标位置Y坐标值</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent.MarkUndo">
+	<summary>
+ 把当前状态做一个UNDO标记，方便回退到这个标记
+ </summary>
+</member><member name="M:CxAzFunc.MxCadEvent.CommandWillStart(System.String)">
+	<summary>
+ 命令将要开始执行时事件
+ </summary>
+	<param name="commandName">待执行的命令名称</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent.ImplementCommandEvent(AxMxDrawXLib._DMxDrawXEvents_ImplementCommandEventEvent)">
+	<summary>
+ 命令执行事件
+ </summary>
+	<param name="e">命令执行事件参数，包含命令ID编号</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent.DynWorldDraw(AxMxDrawXLib._DMxDrawXEvents_DynWorldDrawEvent)">
+	<summary>
+ 动态拖放时的绘制事件,即屏幕绘制
+ </summary>
+	<param name="e">动态绘制参数</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent.MouseMove(System.Double,System.Double)">
+	<summary>
+ 处理鼠标移动事件
+ </summary>
+	<param name="dx">事件发生时鼠标X坐标</param>
+	<param name="dy">事件发生时鼠标Y坐标</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent.MouseLeftDown(System.Double,System.Double)">
+	<summary>
+ 处理鼠标左键按下事件
+ </summary>
+	<param name="dx">事件发生时鼠标X坐标</param>
+	<param name="dy">事件发生时鼠标Y坐标</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent.MouseRightDown(System.Double,System.Double)">
+	<summary>
+ 处理鼠标右键按下事件
+ </summary>
+	<param name="dx">事件发生时鼠标X坐标</param>
+	<param name="dy">事件发生时鼠标Y坐标</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent.KeyDown(System.Int32)">
+	<summary>
+ 处理键盘按键事件
+ </summary>
+	<param name="key">事件发生时的按键值枚举</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent.CommandEnded(System.String)">
+	<summary>
+ CAD一个命令执行结束事件
+ </summary>
+	<param name="commandName">待执行的命令名称</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent.FunctionEnded">
+	<summary>
+ 功能模块结束事件，一般在此执行窗体关闭、恢复操作界面默认等操作
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.MxCadEvent">
+	<summary>
+ CAD事件处理类
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.MxCadEvent2.IsInNextCommand">
+	<summary>
+ 指示是否处于待执行下一个命令状态
+ </summary>
+</member><member name="P:CxAzFunc.MxCadEvent2.mainForm">
+	<summary>
+ 应用程序主窗体
+ </summary>
+</member><member name="F:CxAzFunc.MxCadEvent2.mxCadObj">
+	<summary>
+ 事件关联的CAD对象
+ </summary>
+</member><member name="M:CxAzFunc.MxCadEvent2.#ctor(AxMxDrawXLib.AxMxDrawX,System.Windows.Forms.Form)">
+	<summary>
+ 通过CAD控件对象和应用程序主窗体初始化事件管理对象
+ </summary>
+	<param name="cadObj">CAD控件对象</param>
+	<param name="mainForm">应用程序主窗体</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent2.MarkUndo">
+	<summary>
+ 把当前状态做一个UNDO标记，方便回退到这个标记
+ </summary>
+</member><member name="M:CxAzFunc.MxCadEvent2.CommandStartInit(System.Boolean@)">
+	<summary>
+ 命令执行前的初始化,该过程作为“ImplementCommandEvent”的子过程触发
+ </summary>
+	<param name="isCancel">获取或设置是否取消接下来的事件处理</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent2.CommandRunning(System.Int16)">
+	<summary>
+ 命令执行中的代码块，该过程作为“ImplementCommandEvent”的子过程触发
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent2.CommandEndedHandle">
+	<summary>
+ 命令执行结束时处理过程，该过程作为“ImplementCommandEvent”的子过程触发
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent2.CommandWillStart(System.String)">
+	<summary>
+ 命令将要开始执行时事件
+ </summary>
+	<param name="commandName">待执行的命令名称</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent2.ImplementCommandEvent(AxMxDrawXLib._DMxDrawXEvents_ImplementCommandEventEvent)">
+	<summary>
+ 命令执行事件
+ </summary>
+	<param name="e">命令执行事件参数，包含命令ID编号</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent2.DynWorldDraw(AxMxDrawXLib._DMxDrawXEvents_DynWorldDrawEvent)">
+	<summary>
+ 动态拖放时的绘制事件,即屏幕绘制
+ </summary>
+	<param name="e">动态绘制参数</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent2.MouseMove(System.Double,System.Double)">
+	<summary>
+ 处理鼠标移动事件
+ </summary>
+	<param name="dx">事件发生时鼠标X坐标</param>
+	<param name="dy">事件发生时鼠标Y坐标</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent2.MouseLeftDown(System.Double,System.Double)">
+	<summary>
+ 处理鼠标左键按下事件
+ </summary>
+	<param name="dx">事件发生时鼠标X坐标</param>
+	<param name="dy">事件发生时鼠标Y坐标</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent2.MouseRightDown(System.Double,System.Double)">
+	<summary>
+ 处理鼠标右键按下事件
+ </summary>
+	<param name="dx">事件发生时鼠标X坐标</param>
+	<param name="dy">事件发生时鼠标Y坐标</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent2.KeyDown(System.Int32)">
+	<summary>
+ 处理键盘按键事件
+ </summary>
+	<param name="key">事件发生时的按键值枚举</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent2.CommandEnded(System.String)">
+	<summary>
+ CAD一个命令执行结束事件
+ </summary>
+	<param name="commandName">待执行的命令名称</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEvent2.Dispose">
+	<summary>
+ 释放功能模块所使用资源,一般在功能模块切换时调用该方法
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.MxCadEvent2">
+	<summary>
+ CAD事件处理对象类
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Fgfj.风管软接头.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Fgfj.风管软接头.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Fgfj.风管法兰.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Fgfj.风管法兰.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Fgfj.风管阀门.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Fgfj.风管阀门.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="M:CxAzFunc.FormProgress.ProgressThread">
+	<summary>进度线程</summary>
+</member><member name="M:CxAzFunc.FormProgress.StartProgress(System.String)">
+	<summary>开始进度</summary>
+</member><member name="M:CxAzFunc.FormProgress.EndProgress">
+	<summary>停止进度</summary>
+</member><member name="M:CxAzFunc.FormProgress.SetProgress(System.String,System.Double)">
+	<summary>设置进度信息</summary>
+	<param name="tipInfo">提示信息</param>
+	<param name="val">进度值0~100</param>
+</member><member name="M:CxAzFunc.FormProgress.SetProgressCPT(System.String,System.Double)">
+	<summary>设置进度信息</summary>
+	<param name="tipInfo">提示信息</param>
+	<param name="val">进度值0~100</param>
+</member><member name="M:CxAzFunc.FormProgress.GetEndTime">
+	<summary>
+ 获取结束时间
+ </summary>
+	<returns></returns>
+</member><member name="M:CxAzFunc.FormProgress.GetCurProgress">
+	<summary>
+ 得当前值
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicEdit.MergeCollinearLine(MxDrawXLib.MxDrawLine,MxDrawXLib.MxDrawLine)">
+	<summary>
+ 合并共线直线,返回合并后的直线对象
+ </summary>
+	<param name="lineObj1">待合并直线1</param>
+	<param name="lineObj2">待合并直线2</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicEdit.MergeCollinearLineBySearch(MxDrawXLib.MxDrawLine,System.String,System.Int32,System.Collections.Generic.List{System.Int64}@)">
+	<summary>
+ 通过指定基准线和搜索精度合并与之共线的同图层所有线段,返回合并后的直线对象(为内存副本)
+ </summary>
+	<param name="baseLine">合并基准线</param>
+	<param name="layerName">基准线所在的图层名</param>
+	<param name="thresholdValue">搜索精度</param>
+	<param name="lisMergeEntityId">返回,被合并的对象的ObjectId值</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Graphic.GraphicEdit">
+	<summary>
+ 图形编辑类
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.AzTool.AzProgress.isResetMainProgress">
+	<summary>
+ 指示在线程执行过程中是否重置子进度条
+ </summary>
+</member><member name="P:CxAzFunc.AzTool.AzProgress.IsRun">
+	<summary>
+ 进度条是否启动
+ </summary>
+</member><member name="P:CxAzFunc.AzTool.AzProgress.ShowSubProgress">
+	<summary>
+ 获取或设置一个值指示是否需要显示子进度条
+ </summary>
+</member><member name="P:CxAzFunc.AzTool.AzProgress.TipMainProgress">
+	<summary>
+ 获取或设置主进度条的提示内容
+ </summary>
+</member><member name="P:CxAzFunc.AzTool.AzProgress.TipSubProgress">
+	<summary>
+ 获取或设置子进度条的提示内容
+ </summary>
+</member><member name="P:CxAzFunc.AzTool.AzProgress.CurSubItemCount">
+	<summary>
+ 当前子进度项目计数
+ </summary>
+</member><member name="P:CxAzFunc.AzTool.AzProgress.MainProgressItemCount">
+	<summary>
+ 主进度条的项目数
+ </summary>
+</member><member name="P:CxAzFunc.AzTool.AzProgress.SubProgressItemCount">
+	<summary>
+ 子进度条项目数,设置该属性会初始子化进度条控件
+ </summary>
+</member><member name="P:CxAzFunc.AzTool.AzProgress.MainProgressValue">
+	<summary>
+ 当前主进度条的值
+ </summary>
+</member><member name="P:CxAzFunc.AzTool.AzProgress.SubProgressValue">
+	<summary>
+ 当前子进度条的值
+ </summary>
+</member><member name="P:CxAzFunc.AzTool.AzProgress.ProgressStyle">
+	<summary>
+ 进度条样式
+ </summary>
+</member><member name="M:CxAzFunc.AzTool.AzProgress.ProgressThread1">
+	<summary>
+ 只显示主进度条的线程
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzProgress.ProgressThread2">
+	<summary>
+ 显示主进度条和子进度条的线程
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzProgress.StartProgress">
+	<summary>
+ 启用进度条对象，该过程会对进度条进行初始化操作
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzProgress.StepNextMainProgress">
+	<summary>
+ 移动主进度条到下一个位置
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzProgress.StepNextSubProgress">
+	<summary>
+ 移动子进度条到下一个位置
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzProgress.InitMainProgress(System.Int32)">
+	<summary>
+ 初始化主进度条
+ </summary>
+	<param name="mainProgressItemCount">主进度条项目数</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzProgress.InitSubProgress(System.Int32)">
+	<summary>
+ 初始化子进度条
+ </summary>
+	<param name="subProgressItemCount">子进度条项目数</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzProgress.StopProgress">
+	<summary>
+ 停用进度条
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.AzTool.AzProgress">
+	<summary>
+ 进度条类
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.Gx.风管.AirDuctType">
+	<summary>
+ 风管类型枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.Gx.风管.AirDuctSystemCategory">
+	<summary>
+ 风管系统类别枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Gx.风管.Name">
+	<summary>
+ 与构件关联的名称标识字符串
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风管.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风管.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风管.Width">
+	<summary>
+ 宽度值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风管.Height">
+	<summary>
+ 高度值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风管.Diameter">
+	<summary>
+ 公称直径值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风管.Thickness">
+	<summary>
+ 壁厚值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风管.InsulationThickness">
+	<summary>
+ 保温层厚值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风管.Perimeter">
+	<summary>
+ 截面周长,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风管.Material">
+	<summary>
+ 风管材质
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风管.Type">
+	<summary>
+ 风管类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风管.IsInsulate">
+	<summary>
+ 是否保温
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.冷媒管.Name">
+	<summary>
+ 冷媒管构件名称由系统自动根据材质、气液管管径自动生成
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.冷媒管.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.冷媒管.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.冷媒管.GasDiameter">
+	<summary>
+ 冷媒管气管管径值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.冷媒管.GasInsulationThickness">
+	<summary>
+ 气管保温层厚值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.冷媒管.FluidDiameter">
+	<summary>
+ 冷媒管液管管径值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.冷媒管.FluidInsulationThickness">
+	<summary>
+ 液管保温层厚值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.冷媒管.IsInsulate">
+	<summary>
+ 是否保温
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.冷媒管.Material">
+	<summary>
+ 冷媒管材质类型
+ </summary>
+</member><member name="T:CxAzFunc.Component.Gx.管道.InstallLocation">
+	<summary>
+ 管道安装位置枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Gx.管道.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.管道.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.管道.Diameter1">
+	<summary>
+ 管道的公称直径,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.管道.Diameter2">
+	<summary>
+ 管道的公称外径,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.管道.InsulationThickness">
+	<summary>
+ 保温层厚值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.管道.IsInsulate">
+	<summary>
+ 是否保温
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.管道.Loaction">
+	<summary>
+ 安装位置
+ </summary>
+</member><member name="T:CxAzFunc.Component.Gx.配线.WiringType">
+	<summary>
+ 配线类型枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Gx.配线.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线.Material">
+	<summary>
+ 配线材质信息
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线.SectionArea">
+	<summary>
+ 配线截面面积,单位:㎜²
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线.Type">
+	<summary>
+ 配线类型,分为电线、电缆
+ </summary>
+</member><member name="M:CxAzFunc.Component.Gx.配线.GetWiringModelInfo(System.String,System.Boolean@)">
+	<summary>
+ 获取配线材质编号和型号信息,如果未解析到配线直径，则直径信息返回-1
+ </summary>
+	<param name="strWiringModel">待解析的配线规格字符串</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.Gx.配管.PipeLayCategory">
+	<summary>
+ 配管敷设类别枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Gx.配管.Name">
+	<summary>
+ 与构件关联的名称标识字符串
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配管.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配管.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配管.Diameter">
+	<summary>
+ 公称直径,单位：mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配管.LayCategory">
+	<summary>
+ 配管敷设类别，分为明配、暗配
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配管.Material">
+	<summary>
+ 配管材质信息
+ </summary>
+</member><member name="T:CxAzFunc.Component.Gx.金属软管.FlexiblePipeLengthType">
+	<summary>
+ 金属软管长度类型
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Gx.金属软管.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.金属软管.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.金属软管.LengthType">
+	<summary>
+ 长度范围
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.金属软管.Diameter">
+	<summary>
+ 公称直径
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架.Name">
+	<summary>
+ 与构件关联的名称标识字符串
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架.Width">
+	<summary>
+ 桥架宽度值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架.Height">
+	<summary>
+ 桥架截面高度值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线配管.Name">
+	<summary>
+ 与构件关联的名称标识字符串
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线配管.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线配管.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线配管.DuctModel">
+	<summary>
+ 配管规格
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线配管.LayType">
+	<summary>
+ 配线配管敷设方式
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线配管.LayCategory">
+	<summary>
+ 配线配管敷设类别
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线配管.WiringModel1">
+	<summary>
+ 配线规格1
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线配管.WiringCount1">
+	<summary>
+ 配线根数1
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线配管.WiringModel2">
+	<summary>
+ 配线规格2
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线配管.WiringCount2">
+	<summary>
+ 配线根数2
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.配线配管.Type">
+	<summary>
+ 配线类型,分为电线、电缆
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架配线.Name">
+	<summary>
+ 与构件关联的名称标识字符串
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架配线.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架配线.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架配线.LayType">
+	<summary>
+ 桥架配线敷设方式
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架配线.WiringModel1">
+	<summary>
+ 配线规格1
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架配线.WiringCount1">
+	<summary>
+ 配线根数1
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架配线.WiringModel2">
+	<summary>
+ 配线规格2
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架配线.WiringCount2">
+	<summary>
+ 配线根数2
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.桥架配线.Type">
+	<summary>
+ 配线类型,分为电线、电缆
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风机盘管.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.风机盘管.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.防雷接地线.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.防雷接地线.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.防雷接地线.Material">
+	<summary>
+ 配线材质信息
+ </summary>
+</member><member name="T:CxAzFunc.Component.Gx.避雷引下线.ThunderUnderLineLocation">
+	<summary>
+ 避雷引下线敷设方式类型
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Gx.避雷引下线.Name">
+	<summary>
+ 构件名称
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.避雷引下线.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.避雷引下线.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.避雷引下线.LayType">
+	<summary>
+ 敷设方式
+ </summary>
+</member><member name="T:CxAzFunc.Component.Gx.避雷网.ThunderGridLayType">
+	<summary>
+ 避雷网敷设方式类型枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Gx.避雷网.Name">
+	<summary>
+ 构件名称
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.避雷网.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.避雷网.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.避雷网.Material">
+	<summary>
+ 配线材质信息
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.避雷网.LayType">
+	<summary>
+ 敷设方式
+ </summary>
+</member><member name="T:CxAzFunc.Component.Gx.均压环.EqualRingUnit">
+	<summary>
+ 均压环计量单位类型
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Gx.均压环.Name">
+	<summary>
+ 构件名称
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.均压环.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.均压环.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.均压环.Material">
+	<summary>
+ 配线材质信息
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.均压环.MeasureUnit">
+	<summary>
+ 均压环计量单位
+ </summary>
+</member><member name="T:CxAzFunc.Component.Gx.接地母线.BusBarLoaction">
+	<summary>
+ 防雷接地母线安装位置
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.Gx.接地母线.BusBarLayType">
+	<summary>
+ 接地母线敷设类型
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Gx.接地母线.Name">
+	<summary>
+ 构件名称
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.接地母线.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.接地母线.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.接地母线.Material">
+	<summary>
+ 配线材质信息
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.接地母线.Location">
+	<summary>
+ 安装位置
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gx.接地母线.LayType">
+	<summary>
+ 敷设方式
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风机.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风机.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风口.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风口.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风口.Length">
+	<summary>
+ 长度值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风口.Width">
+	<summary>
+ 宽度值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风口.Diameter">
+	<summary>
+ 公称直径,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风口.Perimeter">
+	<summary>
+ 截面周长,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风口.SectionArea">
+	<summary>
+ 截面面积,单位:㎜²
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风口.Weight">
+	<summary>
+ 风口重量,单位:kg
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风帽.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风帽.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风帽.Material">
+	<summary>
+ 指示组成构件的材料类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风帽.Weight">
+	<summary>
+ 风帽重量,单位:kg
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风罩.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风罩.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.风罩.Material">
+	<summary>
+ 指示组成构件的材料类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.静压箱.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.静压箱.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.静压箱.Width">
+	<summary>
+ 静压箱宽度，单位：mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.静压箱.Height">
+	<summary>
+ 静压箱高度，单位：mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.静压箱.Thickness">
+	<summary>
+ 静压箱厚度值，单位：mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.空调机组.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.空调机组.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.空调设备.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.空调设备.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.消声器.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.消声器.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.消声器.Width">
+	<summary>
+ 消声器宽度，单位：mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.消声器.Height">
+	<summary>
+ 消声器高度，单位：mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.消声器.Length">
+	<summary>
+ 消声器长度值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Ntsb.消声器.Perimeter">
+	<summary>
+ 消声器截面周长，单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfbjsb.报警设备.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfbjsb.报警设备.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfbjsb.控制模块.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfbjsb.控制模块.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="F:CxAzFunc.MdlCommonDeclare.calcDigit">
+	<summary>
+ 计算结果精确位数
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.MdlCommonDeclare.g_db">
+	<summary>
+ 工程主数据库,指当前打开工程的主数据库
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.MdlCommonDeclare.GlobalWidth">
+	<summary>
+ 全局线宽值，一般指示多段线线宽值
+ </summary>
+</member><member name="F:CxAzFunc.MdlCommonDeclare.MxMainCadObj">
+	<summary>
+ 主界面CAD对象
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.MdlCommonDeclare.XmlProjectConfig">
+	<summary>
+ 工程配置数据文档,随工程变动
+ </summary>
+</member><member name="F:CxAzFunc.MdlCommonDeclare.xmlSysDataConfig">
+	<summary>
+ 安装专业基础数据XML文档,包括电气敷设信息、各专业材质信息
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.AzTool.AzMsgBox.MsgButtons.OkCancel">
+	<summary>
+ “确定”和“取消”按钮
+ </summary>
+</member><member name="F:CxAzFunc.AzTool.AzMsgBox.MsgButtons.OkOnly">
+	<summary>
+ 仅“确定”按钮（默认）
+ </summary>
+</member><member name="F:CxAzFunc.AzTool.AzMsgBox.MsgButtons.YesNo">
+	<summary>
+ “是”和“否”按钮
+ </summary>
+</member><member name="F:CxAzFunc.AzTool.AzMsgBox.MsgButtons.YesNoCancel">
+	<summary>
+ “是”、“否”和“取消”按钮
+ </summary>
+</member><member name="F:CxAzFunc.AzTool.AzMsgBox.MsgButtons.AbortRetryIgnore">
+	<summary>
+ “终止”、“重试”和“忽略”按钮
+ </summary>
+</member><member name="T:CxAzFunc.AzTool.AzMsgBox.MsgButtons">
+	<summary>
+ 对话框按钮类型枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzMsgBox.Show(System.String)">
+	<summary>
+显示具有指定文本消息框
+ </summary>
+	<param name="text">要在消息框中显示的文本</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzMsgBox.Show(System.Windows.Forms.IWin32Window,System.String)">
+	<summary>
+在指定所有者对象面前显示具有指定文本消息框
+ </summary>
+	<param name="owner">拥有模式对话框的对象</param>
+	<param name="text">要在消息框中显示的文本</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzMsgBox.Show(System.String,CxAzFunc.AzTool.AzMsgBox.MsgButtons)">
+	<summary>
+显示具有指定文本和按钮的消息框
+ </summary>
+	<param name="text">要在消息框中显示的文本</param>
+	<param name="buttons">指定在消息框中显示的按钮类型</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzMsgBox.Show(System.Windows.Forms.IWin32Window,System.String,CxAzFunc.AzTool.AzMsgBox.MsgButtons)">
+	<summary>
+在指定所有者对象面前显示具有指定文本和按钮的消息框
+ </summary>
+	<param name="owner">拥有模式对话框的对象</param>
+	<param name="text">要在消息框中显示的文本</param>
+	<param name="buttons">指定在消息框中显示的按钮类型</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzMsgBox.Show(System.String,System.String,CxAzFunc.AzTool.AzMsgBox.MsgButtons)">
+	<summary>
+ 显示具有指定文本、标题和按钮的消息框
+ </summary>
+	<param name="text">要在消息框中显示的文本</param>
+	<param name="caption">要在消息框标题栏显示的文本</param>
+	<param name="buttons">指定在消息框中显示的按钮类型</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzTool.AzMsgBox.Show(System.Windows.Forms.IWin32Window,System.String,System.String,CxAzFunc.AzTool.AzMsgBox.MsgButtons)">
+	<summary>
+ 在指定所有者对象面前显示具有指定文本、标题和按钮的消息框
+ </summary>
+	<param name="owner">拥有模式对话框的对象</param>
+	<param name="text">要在消息框中显示的文本</param>
+	<param name="caption">要在消息框标题栏显示的文本</param>
+	<param name="buttons">指定在消息框中显示的按钮类型</param>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.AzTool.AzMsgBox">
+	<summary>
+ 显示可包含文本和按钮的消息框
+ </summary>
+</member><member name="P:CxAzFunc.MxCadEventMiddleware.curCommandId">
+	<summary>
+ 当前命令ID值
+ </summary>
+</member><member name="F:CxAzFunc.MxCadEventMiddleware.emptyCommandId">
+	<summary>
+ 空命令ID值
+ </summary>
+</member><member name="P:CxAzFunc.MxCadEventMiddleware.cadEventObj">
+	<summary>
+ CAD事件处理对象
+ </summary>
+</member><member name="P:CxAzFunc.MxCadEventMiddleware.nextEventObj">
+	<summary>
+ 下一个CAD事件处理器对象
+ </summary>
+</member><member name="F:CxAzFunc.MxCadEventMiddleware.mainForm">
+	<summary>
+ 应用程序主窗体，一般指主CAD控件所在的窗体对象
+ </summary>
+</member><member name="P:CxAzFunc.MxCadEventMiddleware.mxCadObj">
+	<summary>
+ 执行事件的CAD对象
+ </summary>
+</member><member name="M:CxAzFunc.MxCadEventMiddleware.SetCadEventObj(CxAzFunc.MxCadEvent)">
+	<summary>
+ 设置事件对象关联
+ </summary>
+	<param name="eventObj">待设置事件对象,单对象为Nothing时代表空状态</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEventMiddleware.AddEventCorrelation">
+	<summary>
+ 设置CAD控件事件关联
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEventMiddleware.CancelEventCorrelation">
+	<summary>
+ 取消CAD控件事件关联
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEventMiddleware.CommandWillStart(System.Object,AxMxDrawXLib._DMxDrawXEvents_CommandWillStartEvent)">
+	<summary>
+ 命令将要开始执行时事件
+ </summary>
+	<param name="e">待执行的命令参数，包含待执行的命令名称</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEventMiddleware.ImplementCommandEvent(System.Object,AxMxDrawXLib._DMxDrawXEvents_ImplementCommandEventEvent)">
+	<summary>
+ 执行命令事件
+ </summary>
+</member><member name="M:CxAzFunc.MxCadEventMiddleware.DynWorldDraw(System.Object,AxMxDrawXLib._DMxDrawXEvents_DynWorldDrawEvent)">
+	<summary>
+ 动态拖放时的绘制事件,即屏幕绘制
+ </summary>
+	<param name="e">动态绘制参数</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEventMiddleware.MouseEvent(System.Object,AxMxDrawXLib._DMxDrawXEvents_MouseEventEvent)">
+	<summary>
+ 处理鼠标事件
+ </summary>
+	<param name="e">事件参数，包含事件发生时的坐标信息，鼠标事件类型等</param>
+</member><member name="M:CxAzFunc.MxCadEventMiddleware.MxKeyDown(System.Object,AxMxDrawXLib._DMxDrawXEvents_MxKeyDownEvent)">
+	<summary>
+ 处理键盘键按下事件
+ </summary>
+	<param name="e">事件参数，包含事件发生时的按键相关信息</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadEventMiddleware.CommandEnded(System.Object,AxMxDrawXLib._DMxDrawXEvents_CommandEndedEvent)">
+	<summary>
+ 命令执行完成事件
+ </summary>
+	<param name="e">事件参数，包含已执行完成的命令名称</param>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.MxCadEventMiddleware">
+	<summary>
+ 处理CAD事件的中间件
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.frmValueRangeSet.IsAllowDecimal">
+	<summary>
+ 指示是否允许输入小数
+ </summary>
+</member><member name="P:CxAzFunc.frmValueRangeSet.ValueType">
+	<summary>
+ 输入的数值类型,如厚度、周长、面积
+ </summary>
+</member><member name="P:CxAzFunc.frmValueRangeSet.StartValue">
+	<summary>
+ 起始数值值
+ </summary>
+</member><member name="P:CxAzFunc.frmValueRangeSet.EndValue">
+	<summary>
+ 终止数值值
+ </summary>
+</member><member name="T:CxAzFunc.frmValueRangeSet">
+	<summary>
+ 数值范围设置窗体
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.AzComponentGroup">
+	<summary>
+ 安装构件组别枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.AzComponentType">
+	<summary>
+ 安装全部构件类型ID枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.ElecComponentType">
+	<summary>
+ 电气工程所属的构件类型ID枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.PlumbingComponentType">
+	<summary>
+ 水暖工程所属构件类型ID枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.HVACComponentType">
+	<summary>
+ 通风空调所属构件类型ID枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.ElectricalGroup">
+	<summary>
+ 电气工程构件组别枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.PlumbingGroup">
+	<summary>
+ 水暖工程构件组别枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.HVACGroup">
+	<summary>
+ 通风空调工程构件组别枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.BaseComponent.#ctor(CxAzFunc.Component.AzComponentGroup,CxAzFunc.Component.AzComponentType)">
+	<summary>
+ 根据构件组别、构件类型初始化安装构件对象基类
+ </summary>
+	<param name="componentGroup">构件组别</param>
+	<param name="componentType">构件类型</param>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.BaseComponent.Name">
+	<summary>
+ 与构件关联的名称标识字符串
+ </summary>
+</member><member name="P:CxAzFunc.Component.BaseComponent.ComponentGroup">
+	<summary>
+ 构件所属的系统组别
+ </summary>
+</member><member name="P:CxAzFunc.Component.BaseComponent.ComponentType">
+	<summary>
+ 构件所属类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.BaseComponent.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.BaseComponent.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="M:CxAzFunc.Component.BaseComponent.GetComponentProperty">
+	<summary>
+ 获取安装构件对象字符型属性集,该方法在派生类里面必须被重写
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.BaseComponent.InitComponentProperty(System.Collections.Generic.Dictionary{System.String,System.String})">
+	<summary>
+ 初始化安装构件对象属性,该方法在派生类里面必须被重写
+ </summary>
+	<param name="dicProperty">用于初始化构件对象的字符型属性集</param>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.BaseComponent">
+	<summary>
+ 安装专业构件基类
+ </summary>
+	<remarks>其它安装构件类全部由其派生</remarks>
+</member><member name="M:CxAzFunc.Component.PointCptClass.#ctor(CxAzFunc.Component.AzComponentGroup,CxAzFunc.Component.AzComponentType,System.Double)">
+	<summary>
+ 根据构件组别、构件类型、和安装高度初始化对象
+ </summary>
+	<param name="componentGroup">构件组别</param>
+	<param name="componentType">构件类型</param>
+	<param name="installHeight">构件安装高度,单位mm</param>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.PointCptClass.InstallHeight">
+	<summary>
+ 指示构件安装高度值,值为-1代表同层高，单位:m
+ </summary>
+</member><member name="T:CxAzFunc.Component.PointCptClass">
+	<summary>
+ 安装专业点类型构件基础类，由安装专业构件基类派生
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.LineCptClass.#ctor(CxAzFunc.Component.AzComponentType,System.Int32,System.Int32)">
+	<summary>
+ 根据构件类型、起点高、终点高初始化安装线型构件对象属性
+ </summary>
+	<param name="componentType">构件类型</param>
+	<param name="startHeight">起点高</param>
+	<param name="endHeight">终点高</param>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.LineCptClass.StartHeight">
+	<summary>
+ 线型构件起始点安装高度,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.LineCptClass.EndHeight">
+	<summary>
+ 线型构件起终点安装高度,单位:mm
+ </summary>
+</member><member name="T:CxAzFunc.Component.LineCptClass">
+	<summary>
+ 安装专业线性构件基类，由安装专业构件基类派生
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitPointComponentObj(System.String,System.String,System.Double)">
+	<summary>
+ 初始化安装点类型构件对象实例
+ </summary>
+	<param name="componentGroup">待初始化构件分组</param>
+	<param name="componentType">待初始化构件类型</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitLineComponentObj(System.String,System.Int32,System.Int32)">
+	<summary>
+ 初始化安装线类型构件
+ </summary>
+	<param name="componentType">待初始化构件类型</param>
+	<param name="startHeight">线性构件起始点高度,单位：mm</param>
+	<param name="endHeight">线性构件终止点高度,单位：mm</param>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitCwsbObj(System.String,System.Double)">
+	<summary>
+ 实例化厨卫设备构件对象
+ </summary>
+	<param name="componentType">待初始化对象的类型</param>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitDqsbObj(System.String,System.Double)">
+	<summary>
+ 实例化电气设备构件对象
+ </summary>
+	<param name="componentType">待初始化对象的类型</param>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitDqfjObj(System.String,System.Double)">
+	<summary>
+ 实例化电气附件构件对象
+ </summary>
+	<param name="componentType">待初始化对象的类型</param>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitJpsdObj(System.String,System.Double)">
+	<summary>
+ 实例化给水点构件对象
+ </summary>
+	<param name="componentType">待初始化对象的类型</param>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitGxObj(System.String,System.Int32,System.Int32)">
+	<summary>
+ 实例化管线构件对象
+ </summary>
+	<param name="componentType">待初始化对象的类型</param>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitTfsbObj(System.String,System.Double)">
+	<summary>
+ 实例化通风设备构件对象
+ </summary>
+	<param name="componentType">待初始化对象的类型</param>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitCnsbObj(System.String,System.Double)">
+	<summary>
+ 初始化采暖设备
+ </summary>
+	<param name="componentType">待初始化对象的类型</param>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitFgfjObj(System.String,System.Double)">
+	<summary>
+ 实例化风管附件构件对象
+ </summary>
+	<param name="componentType">待初始化对象的类型</param>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitGdfjObj(System.String,System.Double)">
+	<summary>
+ 实例化管道附件构件对象
+ </summary>
+	<param name="componentType">待初始化对象的类型</param>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitXfbjsbObj(System.String,System.Double)">
+	<summary>
+ 实例化消防报警设备构件对象
+ </summary>
+	<param name="componentType">待初始化对象的类型</param>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitXfswObj(System.String,System.Double)">
+	<summary>
+ 实例化消防水卫构件对象
+ </summary>
+	<param name="componentType">待初始化对象的类型</param>
+</member><member name="M:CxAzFunc.Component.InitCptClass.InitFljdsbObj(System.String,System.Double)">
+	<summary>
+ 实例化防雷接地设备
+ </summary>
+	<param name="componentType">待初始化构件类型</param>
+</member><member name="T:CxAzFunc.Component.InitCptClass">
+	<summary>
+ 构件对象初始化类
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Dqsb.插座.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.插座.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="T:CxAzFunc.Component.Dqsb.灯具.LampInstallType">
+	<summary>
+ 灯具安装方式
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.灯具.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.灯具.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.灯具.InstallType">
+	<summary>
+ 灯具的安装方式，分为吸顶、壁挂、吊链、吊管
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.配电箱.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.配电箱.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.配电箱.Width">
+	<summary>
+ 配电箱宽度值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.配电箱.Height">
+	<summary>
+ 配电箱高度值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.配电箱.Thickness">
+	<summary>
+ 配电箱厚度值,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.配电箱.Perimeter">
+	<summary>
+ 配电箱半周长,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.配电箱.Modular">
+	<summary>
+ 配电箱开关模数
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.设备仪表.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.设备仪表.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.开关.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Dqsb.开关.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.灭火器.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.灭火器.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.喷淋头.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.喷淋头.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.水泵.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.水泵.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.水泵.Weight">
+	<summary>
+ 水泵设备的重量信息
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.水箱.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.水箱.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.水箱.Shape">
+	<summary>
+ 规格形状
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.水箱.Volume">
+	<summary>
+ 水箱容积
+ </summary>
+</member><member name="T:CxAzFunc.Component.Xfsw.消火栓.HydrantInstallType">
+	<summary>
+ 消火栓的安装位置枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Xfsw.消火栓.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.消火栓.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.消火栓.Diameter">
+	<summary>
+ 公称直径,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Xfsw.消火栓.InstallType">
+	<summary>
+ 安装位置
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ByLayer">
+	<summary>
+ 随图层
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ByBlock">
+	<summary>
+ 随块
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.Continuous">
+	<summary>
+ 连续实线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO02W100">
+	<summary>
+ 划线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO03W100">
+	<summary>
+ 划 空格线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO04W100">
+	<summary>
+ 长划、点线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO05W100">
+	<summary>
+ 长划、双点线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO06W100">
+	<summary>
+ 长划、三点线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO07W100">
+	<summary>
+ 点线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO08W100">
+	<summary>
+ 长划、短划线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO09W100">
+	<summary>
+ 长划、双短划线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO10W100">
+	<summary>
+ 划、点线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO11W100">
+	<summary>
+ 双划、点线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO12W100">
+	<summary>
+ 划、双点线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO13W100">
+	<summary>
+ 双划、双点线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO14W100">
+	<summary>
+ 划、三点线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.ACAD_ISO15W100">
+	<summary>
+ 双划、三点线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.DASH">
+	<summary>
+ 虚线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.LineType.DASHHOT">
+	<summary>
+ 点、划线，类似于建筑轴线
+ </summary>
+</member><member name="T:CxAzFunc.Layer.LineType">
+	<summary>
+ 线型名称枚举
+ </summary>
+</member><member name="F:CxAzFunc.Layer.DxfCode.EntityType">
+	<summary>
+ 实体类型的字符串（固定）
+ </summary>
+</member><member name="F:CxAzFunc.Layer.DxfCode.Name">
+	<summary>
+ 名称（属性标记、块名等）
+ </summary>
+</member><member name="F:CxAzFunc.Layer.DxfCode.LineTypeName">
+	<summary>
+ 线型名（固定）
+ </summary>
+</member><member name="F:CxAzFunc.Layer.DxfCode.TextStyleName">
+	<summary>
+ 文字样式名（固定）
+ </summary>
+</member><member name="F:CxAzFunc.Layer.DxfCode.LayerName">
+	<summary>
+ 图层名（固定）
+ </summary>
+</member><member name="F:CxAzFunc.Layer.DxfCode.ColorCode">
+	<summary>
+ 颜色号（固定）
+ </summary>
+</member><member name="F:CxAzFunc.Layer.DxfCode.LineType">
+	<summary>
+ 实体对象线型名组码
+ </summary>
+</member><member name="F:CxAzFunc.Layer.DxfCode.CommonEntity">
+	<summary>
+ 通用实体
+ </summary>
+</member><member name="F:CxAzFunc.Layer.DxfCode.XDataString">
+	<summary>
+ 字符型扩展数据组码
+ </summary>
+</member><member name="F:CxAzFunc.Layer.DxfCode.XDataDounble">
+	<summary>
+ 双精度扩展数据组码
+ </summary>
+</member><member name="F:CxAzFunc.Layer.DxfCode.XDataLong">
+	<summary>
+ 整型扩展数据组码
+ </summary>
+</member><member name="T:CxAzFunc.Layer.DxfCode">
+	<summary>
+ DXF文件常用组码数值枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.Layer.EntityDxfTypeName.LINE">
+	<summary>
+ 线段
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityDxfTypeName.LWPOLYLINE">
+	<summary>
+ 多段线，包括多边形
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityDxfTypeName.CIRCLE">
+	<summary>
+ 圆，不包括圆弧
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityDxfTypeName.ARC">
+	<summary>
+ 圆弧
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityDxfTypeName.SPLINE">
+	<summary>
+ 样条曲线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityDxfTypeName.ELLIPSE">
+	<summary>
+ 椭圆，包括椭圆弧
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityDxfTypeName.INSERT">
+	<summary>
+ 块参考
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityDxfTypeName.TEXT">
+	<summary>
+ 单行文本
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityDxfTypeName.MTEXT">
+	<summary>
+ 多行文本
+ </summary>
+</member><member name="T:CxAzFunc.Layer.EntityDxfTypeName">
+	<summary>
+ DXF文件基础图元类型名称枚举
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityCadTypeName.McDbLine">
+	<summary>
+ 线段
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityCadTypeName.McDbPolyline">
+	<summary>
+ 多段线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityCadTypeName.McDbCircle">
+	<summary>
+ 圆对象
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityCadTypeName.McDbArc">
+	<summary>
+ 圆弧
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityCadTypeName.McDbEllipse">
+	<summary>
+ 椭圆，包括椭圆弧
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityCadTypeName.McDbSpline">
+	<summary>
+ 样条曲线
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityCadTypeName.McDbBlockReference">
+	<summary>
+ 快参考
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityCadTypeName.McDbText">
+	<summary>
+ 单行文字
+ </summary>
+</member><member name="F:CxAzFunc.Layer.EntityCadTypeName.McDbMText">
+	<summary>
+ 多行文字
+ </summary>
+</member><member name="T:CxAzFunc.Layer.EntityCadTypeName">
+	<summary>
+ CAD基础图元对象类型名称枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.NationalStandard.BillCode.GB50856_2013">
+	<summary>
+ 通用安装工程工程量计算规范2013版,施行日期2013年7月1日
+ </summary>
+</member><member name="T:CxAzFunc.NationalStandard.BillCode">
+	<summary>
+ 清单计量规范类型
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.NationalStandard.AirDuctThickness.GB50243_2002">
+	<summary>
+ 通风与空调工程施工质量验收规范2002版,施行日期:2002年4月1日
+ </summary>
+</member><member name="F:CxAzFunc.NationalStandard.AirDuctThickness.GB50243_2016">
+	<summary>
+ 通风与空调工程施工质量验收规范2016版,施行日期:2017年7月1日
+ </summary>
+</member><member name="T:CxAzFunc.NationalStandard.AirDuctThickness">
+	<summary>
+ 风管厚度取值规范编号枚举
+ </summary>
+</member><member name="M:CxAzFunc.Graphic.GraphicParameter.GetRectangleComponentMiddleLinePt(MxDrawXLib.MxDrawBlockReference)">
+	<summary>
+ 获取由单位长度的基础矩形图块缩放而成的矩形构件的中线起点、终点坐标
+ </summary>
+	<param name="componentObj">由单位长度的基础矩形图块缩放而成的矩形构件,如桥架、风管</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicParameter.GetRectangleComponentVertex(MxDrawXLib.MxDrawBlockReference,System.Double)">
+	<summary>
+ 获取由单位长度的基础矩形图块缩放而成的矩形构件角点坐标点(非外包矩形)，角点坐标顺序依次为左下角、右下角、中线右端点、右上角、左上角、中线左端点
+ </summary>
+	<param name="componentObj">由单位长度的基础矩形图块缩放而成的矩形构件,如桥架、风管</param>
+	<param name="extendValue">可选，边界扩充值，默认值为0即不进行扩充</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicParameter.GetTextObjContent(AxMxDrawXLib.AxMxDrawX,MxDrawXLib.MxDrawEntity)">
+	<summary>
+ 获取CAD文本对象的文本内容(含单行和多行文本对象),获取的文本内容不去除左右两端的空格,如果获取失败则返回空字符串
+ </summary>
+	<param name="cadObj">多行文本所属CAD控件对象</param>
+	<param name="entityObj">待对象实体</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicParameter.ExplodeBlockObj(MxDrawXLib.MxDrawEntity,System.Boolean)">
+	<summary>
+ 分解指定的实体对象，如果成功者返回分解后所得到的实体，否则返回Nothing
+ </summary>
+	<param name="blockObj">待分解的实体对象</param>
+	<param name="isErase">指示是否删除分解后的对象实体,只返回实体对象内存副本</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicParameter.GetEntityBitmap(AxMxDrawXLib.AxMxDrawX,System.Int64,System.Byte[]@)">
+	<summary>
+ 获取指定ID的实体对象的位图,如果获取失败则返回Nothing
+ </summary>
+	<param name="cadObj">承载实体所属图形数据库的CAD控件对象</param>
+	<param name="entityId">实体ID值</param>
+	<param name="bytBitmap">可选构件实体对象位图的二进制字节数组</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Graphic.GraphicParameter">
+	<summary>
+ 图形参数类
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.Component.ComponentInfo.isPropertyChange">
+	<summary>
+ 属性是否发生变化,用于指示是否需要将属性写入数据库
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.FloorNum">
+	<summary>
+ 构件实体所属楼层号
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.KindProjId">
+	<summary>
+ 构件实体所属分项工程ID值
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.SystemId">
+	<summary>
+ 构件所属的系统ID
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.MainHashCode">
+	<summary>
+ 属性主哈希值
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.SubHashCode1">
+	<summary>
+ 属性次哈希值1,即不包括构件“专业类型”属性的哈希值
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.SubHashCode2">
+	<summary>
+ 属性次哈希值2,即不包括构件“专业类型”和“系统类型”的属性哈希值
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.SubHashCode3">
+	<summary>
+ 属性次哈希值3,即不包括构件“专业类型”和“系统类型”的属性哈希值
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.IsInputQuantity">
+	<summary>
+ 指示构件是否输出工程量。"True"表示输出工程量,"False"不输出工程量
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.Position">
+	<summary>
+ 构件安装位置基点三维坐标,一般点类型构件需要此属性
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.IsLayOnCeiling">
+	<summary>
+ 是否沿地面,一般线类型构件需要此属性
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.MarkText">
+	<summary>
+ 显示给用户的构件实体的标注文本，如果未设置，该值默认采用构件“构件名称”属性值
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.CalcFormula">
+	<summary>
+ 构件计算式允许带备注，此值如果未设置，则默认为"1"
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.CalcValue">
+	<summary>
+ 只读，构件计算值，其值由“CalcFormula”决定
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.ComponentType">
+	<summary>
+ 只读,构件实体所属的类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.ComponentInfo.Property">
+	<summary>
+ 构件实体的属性集合
+ </summary>
+</member><member name="M:CxAzFunc.Component.ComponentInfo.#ctor(MxDrawXLib.MxDrawEntity)">
+	<summary>
+ 通过构件实体对象初始化构件数据结构对象
+ </summary>
+	<param name="entObj">构件实体对象</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.ComponentInfo.#ctor(System.Int32,System.Int16,System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 由构件所属楼层、分项工程ID、属性集初始化构件数据结构对象
+ </summary>
+	<param name="cptFloorNum">构件所属楼层</param>
+	<param name="kindProjId">构件所属分项工程ID值</param>
+	<param name="dicProperty">构件属性集</param>
+	<param name="systemId">可选，系统ID，默认为0</param>
+	<param name="position">可选，安装位置坐标点，一般点类型构件需要此属性，单位:mm</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.ComponentInfo.WriteCommonXData(MxDrawXLib.MxDrawEntity@,System.String)">
+	<summary>
+ 将通用构件扩展数据写入构件实体,并更新属性映射记录。写入成功则返回"True",否则返回"False"
+ </summary>
+	<param name="componentObj">待写入属性的实体对象</param>
+	<param name="originHandle">可选,底图实体对象句柄,默认为"0",即无底图实体句柄</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Component.ComponentInfo.WriteGxXData(MxDrawXLib.MxDrawEntity@,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ 写入构件管线构件扩展数据
+ </summary>
+	<param name="componentObj">待写入的构件实体对象</param>
+	<param name="isStand">是否属性管线</param>
+	<param name="isUserDefine">是否用户自定义</param>
+	<param name="isOnGround">可选，管线走向是否沿地面，默认不沿地面敷设</param>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Component.ComponentInfo">
+	<summary>
+ 构件数据结构对象，存储绘制构件所需的信息，一般用于作为其它函数或过程的参数对象
+ </summary>
+</member><member name="P:CxAzFunc.frmMsgBox.ButtonType">
+	<summary>
+ 获取或设置消息框按钮类型
+ </summary>
+</member><member name="T:CxAzFunc.frmMsgBox">
+	<summary>
+ 自定义简单消息框
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.MxCadSystemVar.MxblnSysVarName.GRIDMODE">
+	<summary>
+ 栅格捕捉
+ </summary>
+</member><member name="F:CxAzFunc.MxCadSystemVar.MxblnSysVarName.ORTHOMODE">
+	<summary>
+ 正交
+ </summary>
+</member><member name="F:CxAzFunc.MxCadSystemVar.MxblnSysVarName.OSMODE">
+	<summary>
+ 对象捕捉
+ </summary>
+</member><member name="F:CxAzFunc.MxCadSystemVar.MxblnSysVarName.DYNTRACE">
+	<summary>
+ 动态追踪
+ </summary>
+</member><member name="F:CxAzFunc.MxCadSystemVar.MxblnSysVarName.DYNINPUT">
+	<summary>
+ 动态输入
+ </summary>
+</member><member name="F:CxAzFunc.MxCadSystemVar.MxblnSysVarName.LWDISPLAY">
+	<summary>
+ 线宽显示
+ </summary>
+</member><member name="T:CxAzFunc.MxCadSystemVar.MxblnSysVarName">
+	<summary>
+ 布尔类型的系统变量名称枚举
+ </summary>
+</member><member name="M:CxAzFunc.MxCadSystemVar.GetBlnSysVar(AxMxDrawXLib.AxMxDrawX,CxAzFunc.MxCadSystemVar.MxblnSysVarName)">
+	<summary>
+ 获取指定的CAD控件布尔类型系统变量值
+ </summary>
+	<param name="mxCadObj">待获取系统变量值的CAD控件</param>
+	<param name="sysVarType">布尔类型系统变量枚举</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.MxCadSystemVar.SetBlnSysVar(AxMxDrawXLib.AxMxDrawX,CxAzFunc.MxCadSystemVar.MxblnSysVarName,System.Boolean)">
+	<summary>
+ 设置指定类型的CAD控件布尔类型的系统变量值
+ </summary>
+	<param name="mxCadObj">待设置系统变量的CAD控件</param>
+	<param name="sysVarName">系统变量类型枚举</param>
+	<param name="isOpen">指示是否启用该变量名对应的系统功能;"True"启用,"False"停用</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.MxCadSystemVar">
+	<summary>
+ CAD控件系统变量控制类
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicFilter.GetSelectEntity">
+	<summary>
+ 筛选当前CAD用户选中的所有实体,如果未选中任何实体者返回Nothing
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicFilter.GetAllEntity(System.String,CxAzFunc.Layer.EntityDxfTypeName)">
+	<summary>
+ 获取模型空间上所有的实体对象，如果模型空间不存在任何实体，则返回Nothing。
+ </summary>
+	<param name="layerName">可选，实体所在图层名，默认获取所有图层上的实体</param>
+	<param name="entityType">可选，实体类型，默认获取所有实体类型</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicFilter.GetEntityByPoint(MxDrawXLib.MxDrawPoint,System.UInt16,System.String,CxAzFunc.Layer.EntityDxfTypeName)">
+	<summary>
+ 筛选指定点处的实体对象，如果指定点处不存在任何实体，则返回Nothing。该方法一般用于精确筛选。
+ </summary>
+	<param name="filterPoint">筛选基点</param>
+	<param name="offsetValue">可选，筛选区域扩充值，默认0即不进行区域扩充，一般用于精确筛选</param>
+	<param name="layerName">可选，待筛选的图层名称，默认筛选所有图层</param>
+	<param name="entityType">可选，待筛选的实体类型，默认筛选所有的类型的实体</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicFilter.GetOriginEntityByPoint(MxDrawXLib.MxDrawPoint,CxAzFunc.Layer.EntityDxfTypeName,System.UInt16,System.Collections.Generic.List{MxDrawXLib.MxDrawEntity})">
+	<summary>
+ 筛选指定点处的所有底图对象，如果指定点处不存在任何实体，则返回Nothing。
+ </summary>
+	<param name="filterPoint">待筛选点坐标</param>
+	<param name="entityType">可选，筛选的实体类型，默认筛选所有实体</param>
+	<param name="offsetValue">可选，筛选区域扩充值，默认0即不进行区域扩充，一般用于精确筛选</param>
+	<param name="lisCptBlockName">可选，返回单击处块构件名称集合</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicFilter.GetEntityByRect(MxDrawXLib.MxDrawPoint,System.Int32,System.String,CxAzFunc.Layer.EntityDxfTypeName)">
+	<summary>
+ 筛选以指定点为中心的正方形区域内的实体，如果区域内不存在任何实体，则返回Nothing
+ </summary>
+	<param name="centerPoint">筛选正方形区域中心点</param>
+	<param name="offsetValue">筛选边界距中心点的偏移量</param>
+	<param name="layerName">可选，待筛选的图层名称，默认筛选所有图层</param>
+	<param name="entityType">可选，待筛选的实体类型，默认筛选所有的类型的实体</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicFilter.GetEntityByRect(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.String,CxAzFunc.Layer.EntityDxfTypeName)">
+	<summary>
+ 筛选指定矩形区域内的实体，如果区域内不存在任何实体，则返回Nothing
+ </summary>
+	<param name="minPoint">筛选区域左下角点</param>
+	<param name="maxPoint">筛选区域右上角点</param>
+	<param name="layerName">可选，待筛选的图层名称，默认筛选所有图层</param>
+	<param name="entityType">可选，待筛选的实体类型，默认筛选所有的类型的实体</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicFilter.GetEntityByPs(MxDrawXLib.MxDrawPoints,System.String,CxAzFunc.Layer.EntityDxfTypeName)">
+	<summary>
+ 筛选指定闭合区间区域内的实体，如果区域内不存在任何实体，则返回Nothing
+ </summary>
+	<param name="ps">闭合区间</param>
+	<param name="layerName">可选，待筛选的图层名称，默认筛选所有图层</param>
+	<param name="entityType">可选，待筛选的实体类型，默认筛选所有的类型的实体</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicFilter.GetBlockByName(System.String,System.String)">
+	<summary>
+ 获取指定名称的块对象，如果不存在指定名称的块对象则返回Nothing
+ </summary>
+	<param name="blockName">待过滤的块名称</param>
+	<param name="layerName">可选，待过滤的图层名称，筛选所有图层</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicFilter.GetOriginBlockByName(System.String,System.Byte)">
+	<summary>
+ 获取底图中指定名称的块对象,如果不存在指定名称的块对象，则返回Nothing
+ </summary>
+	<param name="blockName">待过滤的块名称</param>
+	<param name="kindProjId">可选，待筛选底图所属的分项工程ID，默认过滤所有的分项工程</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicFilter.GetComponentEntityByPoint(CxAzFunc.Component.AzComponentType,MxDrawXLib.MxDrawPoint,System.Int32)">
+	<summary>
+ 获取指定点处指定类型构件实体对象，如果不存在则返回Nothing
+ </summary>
+	<param name="componentType">待筛选的构件类型</param>
+	<param name="filterPoint">待筛选的基点</param>
+	<param name="offsetValue">可选，筛选区域扩充值，默认0即不进行区域扩充，一般用于精确筛选</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicFilter.GetComponentEntityByRect(CxAzFunc.Component.AzComponentType,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 获取指定矩形区域处指定类型构件实体对象，如果不存在则返回Nothing
+ </summary>
+	<param name="componentType">待筛选的构件类型</param>
+	<param name="minPoint">筛选的矩形区域左下角角点</param>
+	<param name="maxPoint">筛选的矩形区域右上角角点</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Graphic.GraphicFilter">
+	<summary>
+ 图形筛选类
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.StrOperate.SplitLetterNum(System.String)">
+	<summary>
+ 分割由连续字母和连续数字构成的字符串，如：“ABC123”或“123ABC”类型的字符串，返回构成字符串的字母和数字子字符串。
+ </summary>
+	<param name="strSource">源字符串</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.StrOperate.GetIfExpression(System.String,System.Collections.Generic.KeyValuePair{System.String,System.String})">
+	<summary>
+ 获取初始表达式包含IIF判别时的次级表达式,返回次级表达式
+ </summary>
+	<param name="expression">包含IIF判别标记的初始表达式</param>
+	<param name="keyParam">计算IIF判别式所需的计算参数</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.StrOperate.CalcSimpleStrValue1(System.String)">
+	<summary>
+ 计算字符串值,运算符支持"+"、"-"、"*"、"/"、"("、")",返回表达式计算值
+ </summary>
+	<param name="calcFormula">待计算的表达式</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.StrOperate.CalcSimpleStrValue2(System.String)">
+	<summary>
+ 计算字符串值,运算符支持"+"、"-"、"*"、"/"、"^"、"("、")",返回表达式计算值
+ </summary>
+	<param name="calcFormula">待计算的表达式</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.StrOperate.CalcSimpleStrValue3(System.String,System.Double@,System.Collections.Generic.Dictionary{System.String,System.String})">
+	<summary>
+ 计算字符串值,计算式可包含“【】”类型的备注,运算符支持"+"、"-"、"*"、"/"、"("、")";返回值"True"表示计算成功,"False"表示计算失败
+ </summary>
+	<param name="calcFormula">初始计算表达式</param>
+	<param name="calcValue">可选,计算的返回值;当计算成功返回表达式世纪计算值,否则返回0</param>
+	<param name="dicCalcParams">可选,计算参数键值对集合</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.StrOperate.CalcStrValue(System.String,System.Double@,System.String@)">
+	<summary>
+ 计算字符串值,计算式可包含“【】”类型的备注,但不支持"[]"、"{}"运算符和对“IIF”类型的表达式的解析,返回值"True"表示计算成功,"False"表示计算失败
+ </summary>
+	<param name="calcFormula">待计算的字符串</param>
+	<param name="calcValue">可选，返回的计算值</param>
+	<param name="errMsg">可选，计算失败时返回的错误信息</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.StrOperate.CalcStrValue(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Double@)">
+	<summary>
+ 计算字符串值,返回计算结果值,该函数提供对IIF、^的解析
+ </summary>
+	<param name="originCalcExpression">初始计算表达式</param>
+	<param name="dicCalcParams">计算参数键值对集合</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.StrOperate.CombineFormula(System.String,System.Int32,System.Byte)">
+	<summary>
+ 组合计算式，返回组合完的计算式
+ </summary>
+	<param name="baseFormula">待组合的基准计算式</param>
+	<param name="times">基准计算式出现次数</param>
+	<param name="multiple">基准计算式对应的套数</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.StrOperate.GetWiringMarkText(System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ 获取配线标注文本如：BV-3×2.5+2×1.5、3×KVV3*1.5
+ </summary>
+	<param name="wiringModel1">配线规格1，如果不存在则存入空字符串</param>
+	<param name="wiringModel2">配线规格2，如果不存在则存入空字符串</param>
+	<param name="wiringCount1">配线根数1，如果不存在则存入0</param>
+	<param name="wiringCount2">配线根数2，如果不存在则存入0</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.StrOperate">
+	<summary>
+ 字符串操作类，包括字符串分割、字符串数学计算、条件运算等
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzDB.GetTableMaxValue(System.String,System.String)">
+	<summary>
+ 从数据库获取指定表中指定字段的最大值
+ </summary>
+	<param name="tblName">表名</param>
+	<param name="strField">字段名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzDB.GetTableMaxInteger(System.String,System.String)">
+	<summary>
+ 从数据库获取指定表的指定整型字段最大值，如果表为空则返回0
+ </summary>
+	<param name="tblName">表名</param>
+	<param name="idField">字段名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzDB.GetTableMinInteger(System.String,System.String)">
+	<summary>
+ 从数据库获取指定表的指定整型字段的最小值，如果表为空则返回0
+ </summary>
+	<param name="tblName">表名</param>
+	<param name="idField">字段名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzDB.IsExistValue(System.String,System.String,System.String)">
+	<summary>
+ 从数据库查询指定表指定字段是否已经存在指定值
+ </summary>
+	<param name="tblName">待查询数据库表名</param>
+	<param name="strField">待带查询字段名</param>
+	<param name="fieldValue">待查询字段值</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzDB.IsExistValue(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+	<summary>
+ 从数据库查询指定表指定字段是否已经存在指定值
+ </summary>
+	<param name="tblName">待查询数据库表名</param>
+	<param name="dicFields">查询条件键值对集合</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzDB.GetTable(System.String,System.String[])">
+	<summary>
+ 从数据库获取指定名称,指定字段的表;如果成功返回一个DataTable对象,否则返回Nothing
+ </summary>
+	<param name="tableName">待获取表的名称</param>
+	<param name="fieldNams">待获取的字段名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzDB.GetTableBySql(System.String)">
+	<summary>
+ 对工程数据库执行指定的SQL查询语句;成功则返回查询到的DataTable对象,否则返回Nothing
+ </summary>
+	<param name="sqlCmd">待直线的SQL语句</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.AzDB.ReadExcellToDt(System.String)">
+	<summary>
+ 读取Excel文件到DataTable
+ </summary>
+	<param name="excelPath">待读取的Excel文件路径</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.AzDB">
+	<summary>
+ 安装数据操作类
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Cwsb.厨具.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.厨具.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.厨具.Material">
+	<summary>
+ 指示组成构件的材料类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.大便器.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.大便器.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.大便器.Material">
+	<summary>
+ 指示组成构件的材料类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.盥洗盆.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.盥洗盆.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.盥洗盆.Material">
+	<summary>
+ 指示组成构件的材料类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.小便器.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.小便器.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.小便器.Material">
+	<summary>
+ 指示组成构件的材料类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.淋浴器.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cwsb.淋浴器.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.frmInputFormula.HeightFormula">
+	<summary>
+ 用户输入的计算式字符串
+ </summary>
+</member><member name="T:CxAzFunc.frmInputFormula">
+	<summary>
+ 简单计算式输入窗体，主要用于手动布置竖向构件时输入竖向构件高度
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Init.InitProjDB(SqlDB.DbClass@)">
+	<summary>
+ 初始化工程数据文件
+ </summary>
+	<param name="db">工程项目数据库</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Init.InitSysDataConfig(AxMxDrawXLib.AxMxDrawX@,System.Xml.XmlDocument@)">
+	<summary>
+ 初始化系统配置数据文件
+ </summary>
+	<param name="mxCadObj">主CAD对象</param>
+	<param name="xmlConfig">系统配置文档</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Init.UpdateProjDataConfig(System.Xml.XmlDocument@)">
+	<summary>
+ 更新工程配置数据文件
+ </summary>
+	<param name="xmlProj">工程配置文档对象</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Init.UpdateGlobalWidth(System.Byte)">
+	<summary>
+ 更新全局线宽值
+ </summary>
+	<param name="globalWidth"></param>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Init">
+	<summary>
+ 项目引用初始化
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cnsb.散热器.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cnsb.散热器.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cnsb.散热器.Width">
+	<summary>
+ 散热器宽度值,单位为:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cnsb.散热器.Height">
+	<summary>
+ 散热器高度值,单位为:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cnsb.散热器.Thickness">
+	<summary>
+ 散热器厚度值,单位为:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cnsb.散热器.Diameter">
+	<summary>
+ 散热器公称直径值,单位为:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cnsb.散热器.Material">
+	<summary>
+ 指示组成构件的材料类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cnsb.散热器.Model">
+	<summary>
+ 规格型号
+ </summary>
+</member><member name="P:CxAzFunc.Component.Cnsb.散热器.PieceCount">
+	<summary>
+ 散热器片数
+ </summary>
+</member><member name="M:CxAzFunc.FormalCount.IsOper(System.String)">
+	<summary>
+ 判断是否为运算符（）+-*/#这几个字符
+ </summary>
+	<param name="e"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.FormalCount.inOperatorLever(System.String)">
+	<summary>
+ 栈内运算符号的优先
+ </summary>
+	<param name="e"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.FormalCount.OutOperatorLever(System.String)">
+	<summary>
+ 堆栈外的运算符优先级
+ </summary>
+	<param name="e"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.FormalCount.Count(System.Double,System.String,System.Double)">
+	<summary>
+ 算术的四则运算
+ </summary>
+	<param name="DFirstin"></param>
+	<param name="oper"></param>
+	<param name="dLastin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.FormalCount.CountStr(System.String,System.Double@,System.String@)">
+	<summary>
+ 计算字符串计算式运算结果;返回值“True”表示计算成功,反之计算失败
+ </summary>
+	<param name="str">待计算的字符串表达式</param>
+	<param name="result">计算结果</param>
+	<param name="wrongstr">计算失败的时候返回的错误信息文本</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.FormalCount.brackets(System.Int32,System.String@)">
+	<summary>
+ 右边括号处理
+ </summary>
+	<param name="i"></param>
+	<param name="str"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.FormalCount.Number(System.Int32,System.String@)">
+	<summary>
+ 数字处理
+ </summary>
+	<param name="i"></param>
+	<returns></returns>
+</member><member name="M:CxAzFunc.FormalCount.JjccPf(System.Int32,System.String@)">
+	<summary>
+ 加减乘除处理
+ </summary>
+	<param name="i"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicDraw.WriteBlockProperty(MxDrawXLib.MxDrawBlockReference,CxAzFunc.Component.ComponentInfo,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 写入块对象属性
+ </summary>
+	<param name="entComponent">待写入的构件图块对象</param>
+	<param name="componentInfo">待写入的构件图块对应的数据对象</param>
+	<param name="markTextAlignPt">与构件图块关联的标记文本对齐点</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicDraw.DrawCptInSameLocation(MxDrawXLib.MxDrawEntity@,CxAzFunc.Component.ComponentInfo,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 原位重绘构件,一般用于将底图中的实体,转换成构件实体,如果转换成功则返回构件实体ID,否则返回0
+ </summary>
+	<param name="entOrigin">底图实体对象</param>
+	<param name="componentInfo">构件数据对象</param>
+	<param name="markTextPt">可选,标注文本插入基点,默认采用图形中心点作为文本插入点</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicDraw.DrawCptByBlockRecorder(MxDrawXLib.MxDrawBlockTableRecord@,CxAzFunc.Component.ComponentInfo,System.Double,System.Double,MxDrawXLib.MxDrawPoint,System.Int32)">
+	<summary>
+ 通过图形数据库块表记录绘制构件,一般用于批量识别底图中的实体,如果绘制成功则返回构件实体ID,否则返回0
+ </summary>
+	<param name="blockRec">待绘制块表记录对象</param>
+	<param name="componentInfo">构件数据对象</param>
+	<param name="rotateAngle">可选，选择角度默认为0</param>
+	<param name="scale">可选，缩放比例，默认为1即不缩放</param>
+	<param name="markTextPt">可选,标注文本插入基点,默认采用图块基点作为文本左上角对齐点</param>
+	<param name="markTextHeight">可选,标注文本高度值,默认采用100</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicDraw.DrawLineCpt(AxMxDrawXLib.AxMxDrawX,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,CxAzFunc.Component.ComponentInfo,System.String,System.Int32,System.Int32)">
+	<summary>
+ 绘制安装专业水平线类型构件
+ </summary>
+	<param name="cadObj">承载图形数据库的CAD控件对象</param>
+	<param name="startPoint">构件起点坐标</param>
+	<param name="endPoint">构件终点坐标</param>
+	<param name="originHandle">底图图形句柄,默认为“0”即不存在底图句柄,如果句柄指向的对象实体存在则会隐藏该实体</param>
+	<param name="textHeight">可选，备注文本高度，默认为100</param>
+	<param name="constantWidth">可选，多段线固定线宽值，默认采用全局线宽</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicDraw.DrawLineCptByBlockRec(MxDrawXLib.MxDrawBlockTableRecord,MxDrawXLib.MxDrawScale3d,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,CxAzFunc.Component.ComponentInfo,System.Int32)">
+	<summary>
+ 通过预定义块对象绘制安装专业水平线类型构件
+ </summary>
+	<param name="blockRec">预定义的快对象对应的块表记录</param>
+	<param name="scaleFactor">对象空间缩放系数</param>
+	<param name="startPoint">构件起点坐标</param>
+	<param name="endPoint">构件终点坐标</param>
+	<param name="textHeight">可选，备注文本高度，默认为100</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Graphic.GraphicDraw.DrawLineCptByEntity(MxDrawXLib.MxDrawEntity,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,CxAzFunc.Component.ComponentInfo,System.Int32)">
+	<summary>
+ 通过以构造的实体对象绘制安装专业水平线类型构件
+ </summary>
+	<param name="entityObj">待绘制线性构件实体对象</param>
+	<param name="startPoint">构件起点坐标</param>
+	<param name="endPoint">构件终点坐标</param>
+	<param name="textHeight">可选，备注文本高度，默认为100</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Graphic.GraphicDraw">
+	<summary>
+ CAD实体绘制类
+ </summary>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Layer.LayerOperate.InitLayer(CxAzFunc.Component.AzComponentType,System.Int32,System.Boolean)">
+	<summary>
+ 初始化主CAD图层，返回层表记录对象
+ </summary>
+	<param name="componentType">待初始化的图层所属构件类型</param>
+	<param name="kindProjId">待初始化图层所属分项工程ID</param>
+	<param name="isSetCurrent">可选，是否把初始化的图层设置为当前活动图层，默认不设置</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Layer.LayerOperate.SetAllLayerVisible(AxMxDrawXLib.AxMxDrawX,System.Boolean)">
+	<summary>
+ 设置所有CAD图层的可见性
+ </summary>
+	<param name="isVisible">图层可见性。“True”表示设置图层为可见，“False”表示设置图层不可见</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Layer.LayerOperate.SetLayerVisible(AxMxDrawXLib.AxMxDrawX,System.String,System.Boolean)">
+	<summary>
+ 设置图层的可见性
+ </summary>
+	<param name="layerName">图层名称</param>
+	<param name="isVisiable">图层可见性。“True”表示设置图层为可见，“False”表示设置图层不可见</param>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Layer.LayerOperate.GetOriginLayer(System.Byte)">
+	<summary>
+ 获取所有底图图层记录对象,如果不存任何对象则返回Nothing
+ </summary>
+	<param name="kindProjId">可选，底图所属的分项工程ID，默认获取所有分项工程的底图图层记录对象</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:CxAzFunc.Layer.LayerOperate.GetCptLayer(System.Byte,CxAzFunc.Component.AzComponentType)">
+	<summary>
+ 获取安装构件层表记录，如果不存在层表记录则返回Nothing
+ </summary>
+	<param name="kindProjId">可选，待获取的图层所属的分项工程ID值，默认获取所有分项工程的层表记录</param>
+	<param name="componentType">可选，待获取的层表记录所属的构件类型，默认获取所有类型的层表记录</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.Layer.LayerOperate">
+	<summary>
+ 图层操作，包括图层的初始化，过滤等
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Gdfj.沟槽连接件.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.沟槽连接件.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.管道连接件.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.管道连接件.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.管道配件.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.管道配件.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.管道阀门.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.管道阀门.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="T:CxAzFunc.Component.Gdfj.管道套管.SleeveCategory">
+	<summary>
+ 套管类别枚举
+ </summary>
+</member><member name="T:CxAzFunc.Component.Gdfj.管道套管.SleeveLocation">
+	<summary>
+ 套管安装位置
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.管道套管.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.管道套管.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.管道套管.Material">
+	<summary>
+ 指示组成构件的材料类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.管道套管.Diameter">
+	<summary>
+ 公称直径,单位：mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.管道套管.Category">
+	<summary>
+ 套管类型,分为刚性和普通
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.管道套管.Loaction">
+	<summary>
+ 套管安装位置
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.仪表装置.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Gdfj.仪表装置.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="F:CxAzFunc.PipeLayType.CC">
+	<summary>
+ 沿顶棚暗敷设
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.PipeLayType.CE">
+	<summary>
+ 沿顶棚面敷设
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.PipeLayType.FC">
+	<summary>
+ 沿地面暗敷设
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.PipeLayType.FE">
+	<summary>
+ 沿地面面敷设
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.PipeLayType.WC">
+	<summary>
+ 沿墙体暗敷设
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.PipeLayType.WE">
+	<summary>
+ 沿墙体面敷设
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.PipeLayType.CT">
+	<summary>
+ 桥架敷设
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.PipeLayType.CC_WC">
+	<summary>
+ 沿天棚和墙体面敷设
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CxAzFunc.PipeLayType.CE_WC">
+	<summary>
+ 沿天棚和墙体暗敷设
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.PipeLayType">
+	<summary>
+ 电气工程配管敷设方式枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="T:CxAzFunc.WiringType">
+	<summary>
+ 电气工程配线类型枚举
+ </summary>
+	<remarks></remarks>
+</member><member name="P:CxAzFunc.Component.Jpsd.水表.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.水表.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.水表.JunctionType">
+	<summary>
+ 连接方式
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.水表.Diameter">
+	<summary>
+ 排水点所属的宿主构件截面公称直径
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.水龙头.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.水龙头.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.水龙头.Diameter">
+	<summary>
+ 排水点所属的宿主构件截面公称直径
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.污水井.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.污水井.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.污水井.Material">
+	<summary>
+ 指示组成构件的材料类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.地漏.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.地漏.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.地漏.Diameter">
+	<summary>
+ 公称直径,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.清扫口.SpecialityType">
+	<summary>
+ 构件所属的专业类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.清扫口.SystemType">
+	<summary>
+ 构件所属的系统类型
+ </summary>
+</member><member name="P:CxAzFunc.Component.Jpsd.清扫口.Diameter">
+	<summary>
+ 公称直径,单位:mm
+ </summary>
+</member><member name="P:CxAzFunc.My.Resources.Resources.ResourceManager">
+	<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member><member name="P:CxAzFunc.My.Resources.Resources.Culture">
+	<summary>
+  使用此强类型资源类，为所有资源查找
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member><member name="T:CxAzFunc.My.Resources.Resources">
+	<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,324 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FMLib
+</name>
+</assembly>
+<members>
+<member name="M:FMLib.MainForm.DrawAxis(FMLib.CXAxisHandle,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 绘制轴网
+ </summary>
+	<param name="mCxHandle"></param>
+	<param name="originPt"></param>
+	<param name="aimPt"></param>
+</member><member name="M:FMLib.MainForm.SetEntityLayerName(System.Object,System.String,MxDrawXLib.MxDrawMcCmColor)">
+	<summary>
+ 设置实体的图层名
+ </summary>
+	<param name="obj"></param>
+	<param name="layerName"></param>
+	<returns></returns>
+</member><member name="M:FMLib.MainForm.DrawEntity(System.Object,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 绘制实体
+ </summary>
+	<param name="obj">绘制的对象</param>
+	<param name="originPt">移动的起始点</param>
+	<param name="aimPt">移动的目标点</param>
+</member><member name="M:FMLib.CXAxisHandle.AddCXAxis(FMLib.CXAxis)">
+	<summary>
+ 添加轴网
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FMLib.CXAxisHandle.RecoAxisInserctPt(FMLib.CXAxis)">
+	<summary>
+ 识别轴网的交点坐标
+ </summary>
+</member><member name="M:FMLib.CXAxisHandle.GetAddParallelCurveIndex(System.Collections.Generic.List{FMLib.CXAxis}@,FMLib.CXAxis)">
+	<summary>
+ 平行线段排序添加
+ </summary>
+	<param name="list"></param>
+	<param name="CXAxis"></param>
+</member><member name="M:FMLib.CXAxisHandle.GetAddParallelLineIndex(System.Collections.Generic.List{FMLib.CXAxis}@,FMLib.CXAxis)">
+	<summary>
+ 添加直的平行线
+ </summary>
+	<param name="list"></param>
+	<param name="CXAxis"></param>
+</member><member name="T:FMLib.CXAxisHandle">
+	<summary>
+ 识别出的轴网句柄
+ </summary>
+</member><member name="F:FMLib.CXAxis.AxisNumbles">
+	<summary>
+ 轴号
+ </summary>
+</member><member name="F:FMLib.CXAxis.Curve">
+	<summary>
+ 轴线,一般为轴线和弧线
+ </summary>
+</member><member name="T:FMLib.CXAxis">
+	<summary>
+ 单根轴网
+ </summary>
+</member><member name="F:FMLib.CXAxisNumble.Text">
+	<summary>
+ 字体
+ </summary>
+</member><member name="F:FMLib.CXAxisNumble.Circle">
+	<summary>
+ 圆
+ </summary>
+</member><member name="F:FMLib.CXAxisNumble.DimPolyline">
+	<summary>
+ 轴号所连接的标注线
+ </summary>
+</member><member name="M:FMLib.CXAxisNumble.AddDimLines(MxDrawXLib.MxDrawLine)">
+	<summary>
+ 添加标注线
+ </summary>
+	<param name="line"></param>
+</member><member name="T:FMLib.CXAxisNumble">
+	<summary>
+ 轴号
+ </summary>
+</member><member name="F:FMLib.FMConst.AxisLayerText">
+	<summary>
+ 轴网文字
+ </summary>
+</member><member name="F:FMLib.FMConst.AxisLayerDim">
+	<summary>
+ 轴网标注
+ </summary>
+</member><member name="F:FMLib.FMConst.AxisLayerLine">
+	<summary>
+ 轴网线
+ </summary>
+</member><member name="M:FMLib.GeometryMath.IsPtOnCircle(MxDrawXLib.MxDrawCircle,MxDrawXLib.MxDrawPoint)">
+	<summary>
+ 判断点是否在圆上，包括在圆边线上
+ </summary>
+	<param name="pCircle"></param>
+	<param name="pt"></param>
+	<returns></returns>
+</member><member name="M:FMLib.GeometryMath.IsPtOnCircleEdge(MxDrawXLib.MxDrawCircle,MxDrawXLib.MxDrawPoint,System.Double)">
+	<summary>
+  判断点是否在圆的边线上
+ </summary>
+	<param name="pCircle"></param>
+	<param name="pt"></param>
+	<param name="precision">误差范围</param>
+	<returns></returns>
+</member><member name="M:FMLib.GeometryMath.IsPtOnLine(MxDrawXLib.MxDrawCurve,MxDrawXLib.MxDrawPoint,System.Double)">
+	<summary>
+  判断点是否在圆的边线上
+ </summary>
+	<param name="pLine"></param>
+	<param name="pt"></param>
+	<param name="precision">误差范围</param>
+	<returns></returns>
+</member><member name="M:FMLib.GeometryMath.IsInserctPt(MxDrawXLib.MxDrawCurve,MxDrawXLib.MxDrawPoint,System.Double)">
+	<summary>
+ 判断线是否相交于点
+ </summary>
+	<param name="curve"></param>
+	<param name="pt"></param>
+	<param name="precision"></param>
+	<returns></returns>
+</member><member name="M:FMLib.GeometryMath.GetMinAngleToXAxis(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Boolean)">
+	<summary>
+ 获取指定起点和终点的线段在XY平面内与X轴的最小夹角,角度在±1°或360°±1°都返回为0°
+ </summary>
+	<param name="startPoint">计算线段起点</param>
+	<param name="endPoint">计算线段终点</param>
+	<param name="isRadian">可选，指示返回值的表示类型，值为"True"表示以弧度制表示，反之为角度制</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FMLib.GeometryMath.GetAngle(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Boolean)">
+	<summary>
+ 获取由指定起点和终点的线段与X轴的夹角值
+ </summary>
+	<param name="startPoint">计算线段起点</param>
+	<param name="endPoint">计算线段终点</param>
+	<param name="isRadian">可选，指示返回值的表示类型，值为"True"表示以弧度制表示，反之为角度制</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FMLib.GeometryMath.RadianToAngle(System.Double)">
+	<summary>
+ 将指定弧度值转换成角度，返回转换后的角度值
+ </summary>
+	<param name="radianValue">弧度值</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FMLib.GeometryMath.IsParallel(MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,MxDrawXLib.MxDrawPoint,System.Boolean)">
+	<summary>
+ 判断两直线是否平行;返回值True表示平行,反之不平行
+ </summary>
+	<param name="lineStartPoint1">直线1起点</param>
+	<param name="lineEndPoint1">直线1终点</param>
+	<param name="lineStartPoint2">直线2起点</param>
+	<param name="lineEndPoint2">直线2终点</param>
+	<param name="isCalcZ">可选,指示是否考虑Z坐标影响,默认不考虑</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FMLib.GraphicFilter.GetEntityOfLayer(System.String,System.String)">
+	<summary>
+ 通过图层过滤数据
+ </summary>
+	<param name="laryerName">图层名称</param>
+	<returns></returns>
+</member><member name="M:FMLib.GraphicFilter.GetEntityOfType(CxAzFunc.Layer.EntityDxfTypeName)">
+	<summary>
+ 通过类型获取实体
+ </summary>
+	<param name="type"></param>
+	<returns></returns>
+</member><member name="M:FMLib.GraphicFilter.GetEntityOfPoint(MxDrawXLib.MxDrawPoint,CxAzFunc.Layer.EntityDxfTypeName)">
+	<summary>
+ 通过点过滤
+ </summary>
+	<returns></returns>
+</member><member name="P:FMLib.DWGLayerData.LayerNameCol">
+	<summary>
+ 图层名称集合
+ </summary>
+	<returns></returns>
+</member><member name="P:FMLib.DWGLayerData.CircleCol">
+	<summary>
+ 图层圆集合
+ </summary>
+	<returns></returns>
+</member><member name="P:FMLib.DWGLayerData.ArcCol">
+	<summary>
+ 图层的弧集合
+ </summary>
+	<returns></returns>
+</member><member name="P:FMLib.DWGLayerData.LineCol">
+	<summary>
+ 图层的线集合
+ </summary>
+	<returns></returns>
+</member><member name="P:FMLib.DWGLayerData.TextCol">
+	<summary>
+ 图层的字体集合
+ </summary>
+	<returns></returns>
+</member><member name="P:FMLib.DWGLayerData.PolyLineCol">
+	<summary>
+ 多段线集合
+ </summary>
+	<returns></returns>
+</member><member name="T:FMLib.DWGLayerData">
+	<summary>
+ 一个楼层的dwg图层数据
+ </summary>
+</member><member name="P:FMLib.My.Resources.Resources.ResourceManager">
+	<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member><member name="P:FMLib.My.Resources.Resources.Culture">
+	<summary>
+  使用此强类型资源类，为所有资源查找
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member><member name="T:FMLib.My.Resources.Resources">
+	<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member><member name="F:FMLib.RecoAxis.mCXAxisNumbleCol">
+	<summary>
+ 存储组合数据 ，圆、文字、标注线
+ </summary>
+</member><member name="F:FMLib.RecoAxis.mDimLineIdCol">
+	<summary>
+ 标注线的id ,在识别轴网线的时候需要用到
+ </summary>
+</member><member name="F:FMLib.RecoAxis.mAxisSignBlockCol">
+	<summary>
+ 可能是轴符块的集合（包含字体和圆）
+ </summary>
+</member><member name="M:FMLib.RecoAxis.GetAxis">
+	<summary>
+ 获取轴网的信息句柄
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:FMLib.RecoAxis.RecoCXAxisNumbleCol">
+	<summary>
+ 识别圆和字体
+ </summary>
+	<returns></returns>
+	<remarks>返回和圆相交的线图层名</remarks>
+</member><member name="M:FMLib.RecoAxis.GetCXAxisNumbleByBlock(MxDrawXLib.MxDrawBlockReference)">
+	<summary>
+ 通过轴网块获取CXAxisNumble对象
+ </summary>
+	<param name="blockObj"></param>
+</member><member name="M:FMLib.RecoAxis.RecoAxisLine">
+	<summary>
+ 识别轴网线
+ </summary>
+	<remarks></remarks>
+</member><member name="M:FMLib.RecoAxis.Explode">
+	<summary>
+ 炸开数据块
+ </summary>
+</member><member name="M:FMLib.RecoAxis.IsBlockAttributeAxis(MxDrawXLib.MxDrawBlockReference)">
+	<summary>
+ 判断块属性是否为轴网的轴号和轴号中的字体
+ </summary>
+	<returns></returns>
+</member><member name="M:FMLib.RecoAxis.BlockIsTextAndCircle(MxDrawXLib.MxDrawBlockReference)">
+	<summary>
+ 判断块是否是文字和圆
+ </summary>
+	<param name="blockObj"></param>
+	<returns></returns>
+</member><member name="M:FMLib.RecoAxis.GetBlockSelectionSet(Microsoft.VisualBasic.Collection)">
+	<summary>
+ 获取需要砸开的数据块 
+ </summary>
+	<param name="blockIdCol"></param>
+	<returns></returns>
+</member><member name="T:FMLib.RecoAxis">
+	<summary>
+识别轴网数据类， 数据规则，需将图砸开
+ </summary>
+</member><member name="M:FMLib.TestClass.Execute1(FMLib.TestForm,System.String)">
+	<summary>
+ 直接测试，没有交互
+ </summary>
+	<param name="form"></param>
+	<param name="controlName"></param>
+</member><member name="M:FMLib.TestClass.SetEntityLayerName(System.Object,System.String)">
+	<summary>
+ 设置实体的图层名
+ </summary>
+	<param name="obj"></param>
+	<param name="layerName"></param>
+	<returns></returns>
+</member><member name="M:FMLib.TestClass.IsBlockAttribute(MxDrawXLib.MxDrawEntity)">
+	<summary>
+ 判断块是否有属性值
+ </summary>
+	<param name="pEntity"></param>
+</member><member name="M:FMLib.TestClass.GetEntityType(MxDrawXLib.MxDrawEntity)">
+	<summary>
+ 获取实体的类型
+ </summary>
+	<param name="entity"></param>
+	<returns></returns>
+</member><member name="M:FMLib.TestClass.Explode">
+	<summary>
+ 炸开数据块
+ </summary>
+</member><member name="T:FMLib.TestClass">
+	<summary>
+ 测试类
+ </summary>
+</member>
+</members>
+</doc>
